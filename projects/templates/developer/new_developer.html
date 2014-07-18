@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %} Racers {% endblock %}
+
+{%  block content %}
+<h1>Add a Developer</h1>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Add developer">
+</form>
+
+{% endblock %}
+
+{% block subnav %}
+{% endblock %}

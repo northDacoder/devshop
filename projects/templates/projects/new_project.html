@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %} Projects {% endblock %}
+
+{%  block content %}
+<h1>Add a Project</h1>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Add Project">
+</form>
+
+{% endblock %}
+
+{% block subnav %}
+{% endblock %}

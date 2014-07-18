@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %} Edit Developer {% endblock %}
+
+{%  block content %}
+
+<h1>Edit  {{ developer.name }}</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Update developer">
+</form>
+
+
+
+
+{% endblock %}
+
+{% block subnav %}
+        {% if user.is_staff %}
+        <nav class="navbar navbar-default">
+            <ul class="nav navbar-nav">
+        <li><a href="{% url "companies" %}"> Companies</a>
+        <li><a href="{% url "projects" %}"> Projects</a>
+            </ul>
+        </nav>
+    {% endif %}
+{% endblock %}

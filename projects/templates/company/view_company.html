@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block title %} Companies {% endblock %}
+
+    {% block head %}
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0yd3XgwhAeyIvrsh635SduyA7_AFWe-A">
+    </script>
+    {% endblock %}
+
+{%  block content %}
+<div class="company-info">
+<h1>Name: {{ company.name }}</h1>
+<h3>State: {{ company.state }}</h3>
+<h3>Location: {{ company.location }}</h3>
+<h3><a href="{{ company.website }}" target="_blank">{{ company.website }}</a></h3>
+<hr>
+    <ul>
+    <li>{{ company.contact_name }}</li>
+    {%  if company.contact_email %}
+        <li><a href="mailto:{{ club.contact_email }}">{{ company.contact_email }}</a></li>
+    <li>{{ company.contact_phone }}</li>
+        {% endif %}
+    </ul>
+    </div>
+
+{#<div class="company_map">#}
+{##}
+{#<iframe#}
+{#  width="400"#}
+{#  height="400"#}
+{#  frameborder="0" style="border:0"#}
+{#  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC0yd3XgwhAeyIvrsh635SduyA7_AFWe-A#}
+{#    &q={{ club.location }}">#}
+{#</iframe>#}
+{##}
+{#</div>#}
+<div class="clearfix"></div>
+{% if company.developer_company.count > 0 %}
+    <hr>
+    <h2>Developers in {{ company.name }}:</h2>
+        <ul>
+            {% for developer in company.developer_company.all|dictsort:'name' %}
+                <li><a href="{% url "view_developer" developer.id %}" >{{ developer.name }}</a></li>
+            {% endfor %}
+        </ul>
+{% endif %}
+{% endblock %}
+
+{% block subnav %}
+    {% if user.is_staff %}
+        <nav class="navbar navbar-default">
+            <ul class="nav navbar-nav">
+               <li><a href="{% url "edit_company" company.id %}">Edit company</a></li>
+               <li> <a href="{% url "delete_company" company.id %}">Delete company</a></li>
+            </ul>
+        </nav>
+    {% endif %}
+{% endblock %}

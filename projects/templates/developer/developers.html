@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %} Developer {% endblock %}
+
+    {%  block content %}
+
+        <h1>Developers</h1>
+
+
+        <ul>
+        {% for developer in developers|dictsort:"name" %}
+            <li><a href="{% url "view_developer" developer.id %}" >{{ developer.name }}</a></li>
+        {% endfor %}
+        </ul>
+
+    {% endblock %}
+
+
+    {% block subnav %}
+       {% if user.is_staff %}
+        <nav class="navbar navbar-default">
+            <ul class="nav navbar-nav">
+            <li><a href="{% url 'new_developer' %}">Add a new developer</a></li>
+           </ul>
+        </nav>
+        {% endif %}
+    {% endblock %}

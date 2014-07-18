@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %} company {% endblock %}
+
+{%  block content %}
+<h1>Add a company</h1>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Add company">
+</form>
+
+{% endblock %}
+
+{% block subnav %}
+{#    {% if user.is_staff %}#}
+{#        <nav class="navbar navbar-default">#}
+{#            <ul class="nav navbar-nav">#}
+{#               <li><a href="{% url "edit_company" company.id %}">Edit company</a></li>#}
+{#               <li><a href="{% url "delete_company" company.id %}">Delete company</a></li>#}
+{#            </ul>#}
+{#        </nav>#}
+{#    {% endif %}#}
+
+{% endblock %}

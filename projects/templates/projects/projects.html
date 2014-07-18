@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %} Projects {% endblock %}
+
+{%  block content %}
+<h1>Projects</h1>
+
+<ul>
+    {% for project in projects|dictsort:'date' %}
+        <li>{{ project.date|date:"M j, Y" }} - <a href="{% url "view_project" project.id %}" >{{ project.name }}</a></li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
+
+{% block subnav %}
+
+   {% if user.is_staff %}
+    <nav class="navbar navbar-default">
+        <ul class="nav navbar-nav">
+        <li><a href="{% url 'new_project' %}">Add a new project</a></li>
+       </ul>
+    </nav>
+    {% endif %}
+{% endblock %}

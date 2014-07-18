@@ -1,0 +1,13 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+body {background: #eee; font-family: 'Open Sans', sans-serif; font-weight: 100;}
+
+#nav-outer-container #navbar #nav-sw-logo-bar {background-image: none;}
+#nav-sw-logo-bar {background: #1786eb; background-image: none;}
+#nav-sw-logo {background-image: none;}
+a#nav-sw-logo-bar {background-image: none; background: #333;}
+a#nav-sw-logo {background-image: none; background: #333;}
+#nav-inner-container {background-image: none;}
+
+footer {background-image: none; }
+

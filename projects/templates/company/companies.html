@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %} Companies {% endblock %}
+
+{%  block content %}
+<h1>Companies</h1>
+
+<ul>
+    {% for company in companies %}
+        <li><a href="{% url "view_company" company.id %}" >{{ company.name }}</a></li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
+
+{% block subnav %}
+<nav>
+   {% if user.is_staff %}
+    <nav class="navbar navbar-default">
+        <ul class="nav navbar-nav">
+        <li><a href="{% url 'new_company' %}">Add a new company</a></li>
+       </ul>
+    </nav>
+    {% endif %}
+    </nav>
+
+{% endblock %}

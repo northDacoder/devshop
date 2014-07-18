@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %} Project {% endblock %}
+
+{%  block content %}
+
+<h1>{{ project.name }}</h1>
+<h3>Date: {{ project.date }}</h3>
+<h3>Location: {{ project.location }}</h3>
+<h3>Start time: {{ project.start_time }}</h3>
+<hr>
+<p>{{ project.description|linebreaks }}</p>
+    <ul>
+        <li>${{ project.fee }}</li>
+        <li>For more info contact: {{ project.contact_name }}
+        <ul>
+            {% if project.contact_email.count > 0 %}
+                <li><a href="mailto:{{ project.contact_email }}">{{ project.contact_email }}</a></li>
+            {% endif %}
+            {% if project.contact_phone.count > 0 %}
+                <li>{{ project.contact_phone }}</li>
+            {% endif %}
+        </ul>
+        </li>
+    </ul>
+
+<hr>
+{% if project.project.count > 0 %}
+    <h1>Developers in {{ company.name }}:</h1>
+        <ol>
+            {% for developer in project.project.all %}
+                <li><a href="{% url "view_developer" developer.developer.id %}" >{{ developer.developer.name }}</a></li>
+            {% endfor %}
+        </ol>
+{% endif %}
+{% endblock %}
+
+{% block subnav %}
+    {% if user.is_staff %}
+        <nav class="navbar navbar-default">
+            <ul class="nav navbar-nav">
+                <li><a href="{% url "edit_project" project.id %}">Edit Project</a></li>
+                <li><a href="{% url "delete_project" project.id %}">Delete Project</a></li>
+            </ul>
+        </nav>
+    {% endif %}
+{% endblock %}
