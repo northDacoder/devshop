@@ -7,11 +7,9 @@
 <h1>Edit {{ company.name }}</h1>
 <form method="post">
     {% csrf_token %}
-    {{ form }}
-    <input type="submit" value="Update company">
+    {{ form.as_p }}
+    <input type="submit" value="Save">
 </form>
-
-
 
 
 {% endblock %}
@@ -20,9 +18,8 @@
     {% if user.is_staff %}
         <nav class="navbar navbar-default">
             <ul class="nav navbar-nav">
-        <li><a href="{% url "companies" %}">Companies</a></li>
-        <li><a href="{% url "view_company" company.id %}" >View {{ company.name }}</a></li>
-
+                <li><a href="{% url "companies" %}">Companies</a></li>
+                <li><a href="{% url "view_company" company.id %}" >View {{ company.name }}</a></li>
             </ul>
         </nav>
     {% endif %}

@@ -11,3 +11,14 @@ a#nav-sw-logo {background-image: none; background: #333;}
 
 footer {background-image: none; }
 
+li.list-group-item-pearl {background: #eee;}
+li.list-group-item-dodger {background: dodgerblue}
+li.list-group-item-orange {background: #f39c12;}
+li.list-group-item-pearl {background: red;}
+li.list-group-item-seagreen {background: lightseagreen}
+li.list-group-item-teal {background: teal}
+li.list-group-item-yellow {background: #ffff00}
+li.list-group-item-dark {background: #101010}
+
+
+li.list-group-item a{color: #333;}

@@ -11,6 +11,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 
     <link rel="stylesheet" href="{% get_static_prefix %}css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="{% get_static_prefix %}css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="{% get_static_prefix %}css/devicons.min.css" type="text/css">
     <link rel="stylesheet" href="{% get_static_prefix %}css/swmenu.css" type="text/css">
     <link rel="stylesheet" href="{% get_static_prefix %}css/swmenu2.css" type="text/css">
     <link rel="stylesheet" href="{% get_static_prefix %}css/styles.css" type="text/css">
@@ -24,182 +26,184 @@
 
 <body style="position: relative;">
 
-<div id="chrome-container">
-    <div class="goc-el goc-bg-dark" id="goc-bar">
-        <div class="goc-bound">
-            <ul id="goc-user" class="">
-                <li class="goc-login"><span role="button" onclick=""><u>Login</u></span></li>
-                <li class="goc-logout"><span role="button" onclick=""><u>Logout</u></span></li>
-            </ul>
-            <form class="goc-search" action="" method="GET">
-                <input type="hidden" name="o" value="home">
-                <input type="text" name="q" placeholder="Search" autocomplete="off">
-            </form>
-            <ul id="goc-desktop-global" class="goc-desktop-global">
-                <li class="goc-desktop"><a href="" class=""><u>Disney.com</u></a></li>
-                <li class="goc-desktop"><a href="" class=""><u>Store</u></a></li>
-                <li class="goc-desktop"><a href="" class=""><u>Parks &amp; Travel</u></a></li>
-                <li class="goc-desktop"><a href="" class=""><u>Video</u></a></li>
-                <li class="goc-desktop"><a href="" class=""><u>Movies</u></a></li>
-                <li class="goc-desktop"><a href="" class=""><u>TV</u></a></li>
-                <li class="goc-desktop"><a href="" class=""><u>Music</u></a></li>
-                <li class="goc-desktop"><a href="" class=""><u>Games</u></a></li>
-                <li class="goc-desktop"><a href="" class=""><u>Books</u></a></li>
-                <li class="goc-desktop"><a href="" class=""><u>Live Shows</u></a></li>
-            </ul>
-        </div>
-    </div>
-</div>
-<div id="style-pack-theming">
-    <style type="text/css"> /* header background images and color settings */
-    @media screen and (min-width: 1025px) {
-        #nav-outer-container.full-nav #navbar #nav-header-bg {
-            background-image: url();
-        }
-    }
-
-    @media screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 1.3), not all, not all, only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-        #nav-outer-container.full-nav #navbar #nav-header-bg {
-            background-image: url();
-        }
-    }
-
-    /* page background images and color settings */   </style>
-</div>
-
-<div id="nav-outer-container" class="full-nav">
-    <div id="nav-drawer-bg"></div>
-    <div id="nav-inner-container">
-    <span id="navbar">
-        <div id="nav-wrapper" itemscope="" itemtype="">
-            <div id="nav-header-bg">
-                <span class="nav-header-fade right"></span>
-                <span class="nav-header-fade left"></span>
-            </div>
-
-            <div id="nav-external-links">
-                <ul id="social-links">
-                    <li><a class="fb" href="" target="_blank" data-cto="social"></a></li>
-                    <li><a class="tumblr" href="" target="_blank" data-cto="social"></a></li>
-                    <li><a class="twitter" href="" target="_blank" data-cto="social"></a></li>
-                    <li><a class="instagram" href="" target="_blank" data-cto="social"></a></li>
-                    <li><a class="google_plus" href="" target="_blank" data-cto="social"></a></li>
-                    <li><a class="youtube" href="" target="_blank" data-cto="social"></a></li>
-                </ul>
-                <div id="chrome-controls-container">
-                    <div id="chrome-controls"></div>
-                </div>
-            </div>
-
-            <div id="nav-drawer-toggle">
-                <div class="toggle-icon">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </div>
-            <a id="nav-sw-logo-bar" href="/" itemprop="logo"></a>
-            <a id="nav-sw-logo" href="/" itemprop="logo"></a>
-
-            <div id="nav-utility">
-                <div id="nav-search-container" class="">
-                    <div class="bedazzlement-container">
-                        <span class="bedazzlement"></span>
-                    </div>
-
-                    <form class="nav-search top-nav" action="/search" method="GET">
-                        <div class="query-field">
-                            <input id="nav-search-input" name="q" type="text" placeholder="Search" value=""
-                                   spellcheck="false" autocorrect="off" autocapitalize="off" autocomplete="off">
-                        </div>
-                    </form>
-
-                    <span id="nav-search-icon"></span>
-                </div>
-                <div class="nav-login show">
-                    <div class="logged-out-container">
-                        <div class="disid-login log-in-out" role="button">log in</div>
-                        <p> // </p>
-
-                        <div class="disid-signup log-in-out" role="button">sign up</div>
-                    </div>
-
-                    <div class="logged-in-container">
-                        <div class="display-user log-in-out">
-                            <span class="disid-user" role="button">user name</span>
-                            <span class="arrow"></span>
-                        </div>
-                        <div class="disid-flyout">
-                            <div class="disid-login flyout-item" role="button">account</div>
-                            <div class="disid-signup flyout-item" role="button">log out</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </span>
-        <div id="nav-drawer">
-            <nav id="nav-content">
-                <div class="nav-login show">
-                    <div class="logged-out-container">
-                        <div class="disid-login log-in-out" role="button">log in</div>
-                        <p> // </p>
-
-                        <div class="disid-signup log-in-out" role="button">sign up</div>
-                    </div>
-
-                    <div class="logged-in-container">
-                        <div class="display-user log-in-out">
-                            <span class="disid-user" role="button">user name</span>
-                            <span class="arrow"></span>
-                        </div>
-                        <div class="disid-flyout">
-                            <div class="disid-login flyout-item" role="button">account</div>
-                            <div class="disid-signup flyout-item" role="button">log out</div>
-                        </div>
-                    </div>
-                </div>
-
-                <ul id="section-links" itemscope="" itemtype="">
-                    <li itemprop="name">
-                        <a itemprop="url" class="section-link newsblog-content active" href="/companies"
-                           data-cto="section">
-                            <span class="section-icon newsblog-icon"></span>
-                            <p>Companies</p>
-                            <span class="notch"></span>
-                        </a>
-                    </li>
-                    <li itemprop="name">
-                        <a itemprop="url" class="section-link video-content active" href="/developers"
-                           data-cto="section">
-                            <span class="section-icon video-icon"></span>
-                            <p>Developers</p>
-                            <span class="notch"></span>
-                        </a>
-                    </li>
-                    <li itemprop="name">
-                        <a itemprop="url" class="section-link events-content active" href="/projects"
-                           data-cto="section">
-                            <span class="section-icon events-icon"></span>
-                            <p>Projects</p>
-                            <span class="notch"></span>
-                        </a>
-                    </li>
-                    <li itemprop="name">
-                        <a itemprop="url" class="section-link films-content active" href="/about" data-cto="section">
-                            <span class="section-icon films-icon"></span>
-                            <p>About</p>
-                            <span class="notch"></span>
-                        </a>
-                    </li>
-                    <li itemprop="name">
-                        <a itemprop="url" class="section-link tvshows-content active" href="/contact"
-                           data-cto="section">
-                            <span class="section-icon tvshows-icon"></span>
-                            <p>Contact</p>
-                            <span class="notch"></span>
-                        </a>
-                    </li>
+{#<div id="chrome-container">#}
+{#    <div class="goc-el goc-bg-dark" id="goc-bar">#}
+{#        <div class="goc-bound">#}
+{#            <ul id="goc-user" class="">#}
+{#                <li class="goc-login"><span role="button" onclick=""><u>Login</u></span></li>#}
+{#                <li class="goc-logout"><span role="button" onclick=""><u>Logout</u></span></li>#}
+{#                <li class="goc-login"><a href="/login" class="btn btn-success" role="button">Login</a>/li>#}
+{#                <li class="goc-logout"><a href="/logout" class="btn btn-danger" role="button">Logout</a></li>#}
+{#            </ul>#}
+{#            <form class="goc-search" action="" method="GET">#}
+{#                <input type="hidden" name="o" value="home">#}
+{#                <input type="text" name="q" placeholder="Search" autocomplete="off">#}
+{#            </form>#}
+{#            <ul id="goc-desktop-global" class="goc-desktop-global">#}
+{#                <li class="goc-desktop"><a href="" class=""><u>Link</u></a></li>#}
+{#                <li class="goc-desktop"><a href="" class=""><u>Link</u></a></li>#}
+{#                <li class="goc-desktop"><a href="" class=""><u>Link</u></a></li>#}
+{#                <li class="goc-desktop"><a href="" class=""><u>Link</u></a></li>#}
+{#                <li class="goc-desktop"><a href="" class=""><u>Link</u></a></li>#}
+{#                <li class="goc-desktop"><a href="" class=""><u>Link</u></a></li>#}
+{#                <li class="goc-desktop"><a href="" class=""><u>Link</u></a></li>#}
+{#                <li class="goc-desktop"><a href="" class=""><u>Link</u></a></li>#}
+{#                <li class="goc-desktop"><a href="" class=""><u>Link</u></a></li>#}
+{#                <li class="goc-desktop"><a href="" class=""><u>Link</u></a></li>#}
+{#            </ul>#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+{#<div id="style-pack-theming">#}
+{#    <style type="text/css"> /* header background images and color settings */#}
+{#    @media screen and (min-width: 1025px) {#}
+{#        #nav-outer-container.full-nav #navbar #nav-header-bg {#}
+{#            background-image: url();#}
+{#        }#}
+{#    }#}
+{##}
+{#    @media screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 1.3), not all, not all, only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {#}
+{#        #nav-outer-container.full-nav #navbar #nav-header-bg {#}
+{#            background-image: url();#}
+{#        }#}
+{#    }#}
+{##}
+{#    /* page background images and color settings */   </style>#}
+{#</div>#}
+{##}
+{#<div id="nav-outer-container" class="full-nav">#}
+{#    <div id="nav-drawer-bg"></div>#}
+{#    <div id="nav-inner-container">#}
+{#    <span id="navbar">#}
+{#        <div id="nav-wrapper" itemscope="" itemtype="">#}
+{#            <div id="nav-header-bg">#}
+{#                <span class="nav-header-fade right"></span>#}
+{#                <span class="nav-header-fade left"></span>#}
+{#            </div>#}
+{##}
+{#            <div id="nav-external-links">#}
+{#                <ul id="social-links">#}
+{#                    <li><a class="fb" href="" target="_blank" data-cto="social"></a></li>#}
+{#                    <li><a class="tumblr" href="" target="_blank" data-cto="social"></a></li>#}
+{#                    <li><a class="twitter" href="" target="_blank" data-cto="social"></a></li>#}
+{#                    <li><a class="instagram" href="" target="_blank" data-cto="social"></a></li>#}
+{#                    <li><a class="google_plus" href="" target="_blank" data-cto="social"></a></li>#}
+{#                    <li><a class="youtube" href="" target="_blank" data-cto="social"></a></li>#}
+{#                </ul>#}
+{#                <div id="chrome-controls-container">#}
+{#                    <div id="chrome-controls"></div>#}
+{#                </div>#}
+{#            </div>#}
+{##}
+{#            <div id="nav-drawer-toggle">#}
+{#                <div class="toggle-icon">#}
+{#                    <span class="bar"></span>#}
+{#                    <span class="bar"></span>#}
+{#                    <span class="bar"></span>#}
+{#                </div>#}
+{#            </div>#}
+{#            <a id="nav-sw-logo-bar" href="/" itemprop="logo"></a>#}
+{#            <a id="nav-sw-logo" href="/" itemprop="logo"></a>#}
+{##}
+{#            <div id="nav-utility">#}
+{#                <div id="nav-search-container" class="">#}
+{#                    <div class="bedazzlement-container">#}
+{#                        <span class="bedazzlement"></span>#}
+{#                    </div>#}
+{##}
+{#                    <form class="nav-search top-nav" action="/search" method="GET">#}
+{#                        <div class="query-field">#}
+{#                            <input id="nav-search-input" name="q" type="text" placeholder="Search" value=""#}
+{#                                   spellcheck="false" autocorrect="off" autocapitalize="off" autocomplete="off">#}
+{#                        </div>#}
+{#                    </form>#}
+{##}
+{#                    <span id="nav-search-icon"></span>#}
+{#                </div>#}
+{#                <div class="nav-login show">#}
+{#                    <div class="logged-out-container">#}
+{#                        <div class="disid-login log-in-out" role="button">log in</div>#}
+{#                        <p> // </p>#}
+{##}
+{#                        <div class="disid-signup log-in-out" role="button">sign up</div>#}
+{#                    </div>#}
+{##}
+{#                    <div class="logged-in-container">#}
+{#                        <div class="display-user log-in-out">#}
+{#                            <span class="disid-user" role="button">user name</span>#}
+{#                            <span class="arrow"></span>#}
+{#                        </div>#}
+{#                        <div class="disid-flyout">#}
+{#                            <div class="disid-login flyout-item" role="button">account</div>#}
+{#                            <div class="disid-signup flyout-item" role="button">log out</div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </span>#}
+{#        <div id="nav-drawer">#}
+{#            <nav id="nav-content">#}
+{#                <div class="nav-login show">#}
+{#                    <div class="logged-out-container">#}
+{#                        <div class="disid-login log-in-out" role="button">log in</div>#}
+{#                        <p> // </p>#}
+{##}
+{#                        <div class="disid-signup log-in-out" role="button">sign up</div>#}
+{#                    </div>#}
+{##}
+{#                    <div class="logged-in-container">#}
+{#                        <div class="display-user log-in-out">#}
+{#                            <span class="disid-user" role="button">user name</span>#}
+{#                            <span class="arrow"></span>#}
+{#                        </div>#}
+{#                        <div class="disid-flyout">#}
+{#                            <div class="disid-login flyout-item" role="button">account</div>#}
+{#                            <div class="disid-signup flyout-item" role="button">log out</div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{##}
+{#                <ul id="section-links" itemscope="" itemtype="">#}
+{#                    <li itemprop="name">#}
+{#                        <a itemprop="url" class="section-link newsblog-content active" href="/companies"#}
+{#                           data-cto="section">#}
+{#                            <span class="section-icon newsblog-icon"></span>#}
+{#                            <p>Companies</p>#}
+{#                            <span class="notch"></span>#}
+{#                        </a>#}
+{#                    </li>#}
+{#                    <li itemprop="name">#}
+{#                        <a itemprop="url" class="section-link video-content active" href="/developers"#}
+{#                           data-cto="section">#}
+{#                            <span class="section-icon video-icon"></span>#}
+{#                            <p>Developers</p>#}
+{#                            <span class="notch"></span>#}
+{#                        </a>#}
+{#                    </li>#}
+{#                    <li itemprop="name">#}
+{#                        <a itemprop="url" class="section-link events-content active" href="/projects"#}
+{#                           data-cto="section">#}
+{#                            <span class="section-icon events-icon"></span>#}
+{#                            <p>Projects</p>#}
+{#                            <span class="notch"></span>#}
+{#                        </a>#}
+{#                    </li>#}
+{#                    <li itemprop="name">#}
+{#                        <a itemprop="url" class="section-link films-content active" href="/about" data-cto="section">#}
+{#                            <span class="section-icon films-icon"></span>#}
+{#                            <p>About</p>#}
+{#                            <span class="notch"></span>#}
+{#                        </a>#}
+{#                    </li>#}
+{#                    <li itemprop="name">#}
+{#                        <a itemprop="url" class="section-link tvshows-content active" href="/contact"#}
+{#                           data-cto="section">#}
+{#                            <span class="section-icon tvshows-icon"></span>#}
+{#                            <p>Contact</p>#}
+{#                            <span class="notch"></span>#}
+{#                        </a>#}
+{#                    </li>#}
 {#                    <li itemprop="name">#}
 {#                        <a itemprop="url" class="section-link gamesapps-content active" href="/games-apps"#}
 {#                           data-cto="section">#}
@@ -224,993 +228,934 @@
 {#                            <span class="notch"></span>#}
 {#                        </a>#}
 {#                    </li>#}
-                </ul>
-
-                <div id="bar-break"></div>
-                <ul id="social-links">
-                    <li><a class="fb" href="" target="_blank" data-cto="social"></a></li>
-                    <li><a class="tumblr" href="" target="_blank" data-cto="social"></a></li>
-                    <li><a class="twitter" href="" target="_blank" data-cto="social"></a></li>
-                    <li><a class="instagram" href="" target="_blank" data-cto="social"></a></li>
-                    <li><a class="google_plus" href="" target="_blank" data-cto="social"></a></li>
-                    <li><a class="youtube" href="" target="_blank" data-cto="social"></a></li>
-                </ul>
-            </nav>
-        </div>
-        <div id="page-overlay"></div>
-    </div>
-</div>
-
-<div id="body-wrapper" class="">
-<div id="burger-container">
-<div id="background-styles">
-    <div class="starfield star-left"></div>
-    <div class="starfield star-right"></div>
-    <div class="site-default-gradient">
-        <div class="safety-color"></div>
-    </div>
-    <div id="body-bg">
-        <div class="safety-color"></div>
-        <div class="main"></div>
-        <div class="color-fade"></div>
-    </div>
-</div>
-
-<div id="main-body">
-<script src="{% get_static_prefix %}js/jquery.min.map.js" type="text/javascript"></script>
-<script type="text/javascript">window.jQuery || document.write('<script src ="//a.dilcdn.com/sw/jquery-a60447a4b218.js" type="text/javascript"><\/script>')</script>
-<script src="//a.dilcdn.com/sw/application-e74b0deb5cfc.js" type="text/javascript"></script>
-<div id="spinner" style="display: none;">
-    <span class="loader"></span>
-</div>
-
-<div id="main">
-<article id="burger" class="">
-<div class="overlay"></div>
-    <section class="module display-view display" data-module="display">
-        <div class="bound ">
-            <div class="blocks-bound">
-                <div class="blocks-container">
-                    <ul class="blocks-list-view active el2_3A-el2_5-el2_5">
-                        <div class="building-block-config el2_3A video-content   half image-top  ratio-16x9 medium  mob-width-full mob-image-top          ">
-                            <div class="building-block  ">
-                                <div class="building-block-aspect">
-                                    <div class="building-block-padding">
-                                        <div class="building-block-wrapper">
-                                            <div class="image-wrapper">
-                                                <div class="aspect">
-                                                    <a href="">
-    {#                                                    <img src="http://img.lum.dolimg.com/v1/images/image_ac01eba9.jpeg?region=0%2C143%2C3184%2C1792&amp;width=1200" class="thumb">#}
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="content-wrapper">
-                                                <div class="bedazzlement"></div>
-                                                <time>2:05</time>
-                                                <div class="content-bumper">
-                                                    <div class="content-info"><h3 class="title"><a
-                                                            href="http://www.starwars.com/video/star-wars-rebels-meet-the-inquisitor-the-empire-s-jedi-hunter">
-                                                        Star Wars Rebels: Meet the Inquisitor, the
-                                                        Empire’s Jedi Hunter </a></h3>
-
-                                                        <div class="desc-sizer"><p class="desc">Hear
-                                                            from the actor and creators behind the
-                                                            Jedi’s newest enemy.</p></div>
-                                                    </div>
-                                                </div>
-                                                <div class="metadata">
-                                                    <div class="anchored-text"><h4
-                                                            class="category-info"><span
-                                                            class="content-icon video-icon"></span>
-                                                        <span class="category-name">video</span></h4>
-                                                    </div>
-                                                </div>
-                                                <div class="decal"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="building-block-config el2_5 news-content   quarter image-top  ratio-1x1 medium  mob-width-full mob-image-left mob-fixed-height mob-height-tall         ">
-                            <div class="building-block">
-                                <div class="building-block-aspect">
-                                    <div class="building-block-padding">
-                                        <div class="building-block-wrapper">
-                                            <div class="image-wrapper">
-                                                <div class="aspect">
-                                                    <a href="http://www.starwars.com/news/presenting-hasbro-new-huge-millennium-falcon">
-    {#                                                <img src="http://img.lum.dolimg.com/v1/images/image_f65b1fa5.jpeg?region=320%2C0%2C897%2C900&amp;width=600"#}
-    {#                                                     class="thumb"> #}
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="content-wrapper   ">
-                                                <div class="bedazzlement"></div>
-                                                <div class="content-bumper">
-                                                    <div class="content-info"><h3 class="title"><a
-                                                            href="http://www.starwars.com/news/presenting-hasbro-new-huge-millennium-falcon">
-                                                        Presenting Hasbro’s New, Huge Millennium
-                                                        Falcon </a></h3>
-
-                                                        <div class="desc-sizer"><p class="desc">The
-                                                            fastest ship in the Rebel fleet just got a
-                                                            lot bigger.</p></div>
-                                                    </div>
-                                                </div>
-                                                <div class="metadata">
-                                                    <div class="anchored-text"><h4
-                                                            class="category-info"><span
-                                                            class="content-icon news-icon"></span> <span
-                                                            class="category-name">news</span></h4></div>
-                                                </div>
-                                                <div class="decal"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="building-block-config el2_5 news-content   quarter image-top  ratio-1x1 medium  mob-width-full mob-image-left mob-fixed-height mob-height-tall         ">
-                            <div class="building-block  ">
-                                <div class="building-block-aspect">
-                                    <div class="building-block-padding">
-                                        <div class="building-block-wrapper">
-                                            <div class="image-wrapper">
-                                                <div class="aspect">
-                                                    <a href="http://www.starwars.com/news/star-wars-comics-preview-july-16-2014">
-    {#                                                    <img src="http://img.lum.dolimg.com/v1/images/image_22b58279.jpeg?region=77%2C273%2C466%2C468"#}
-    {#                                                     class="thumb">#}
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="content-wrapper   ">
-                                                <div class="bedazzlement"></div>
-                                                <div class="content-bumper">
-                                                    <div class="content-info"><h3 class="title"><a
-                                                            href="http://www.starwars.com/news/star-wars-comics-preview-july-16-2014">
-                                                        Star Wars Comics Preview: July 16, 2014 </a>
-                                                    </h3>
-
-                                                        <div class="desc-sizer"><p class="desc">Get a
-                                                            first look at Star Wars: Darth Maul -- Son
-                                                            of Dathomir #3, a new canonical story based
-                                                            on unaired episodes of The Clone Wars!</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="metadata     ">
-                                                    <div class="anchored-text"><h4
-                                                            class="category-info"><span
-                                                            class="content-icon news-icon"></span> <span
-                                                            class="category-name">news</span></h4></div>
-                                                </div>
-                                                <div class="decal"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="module-spinner"><span class="loader"></span></div>
-    </section>
-    <section class="module display-view display" data-module="display">
-        <div class="bound ">
-            <div class="blocks-bound">
-                <div class="blocks-container">
-                    <ul class="blocks-list-view active el3_5B-el3_5B-el4_5-el4_5">
-                        <div class="building-block-config el3_5B news-content   third image-top  ratio-2x1 short  mob-width-full mob-image-top          ">
-                            <div class="building-block  ">
-                                <div class="building-block-aspect">
-                                    <div class="building-block-padding">
-                                        <div class="building-block-wrapper">
-                                            <div class="image-wrapper">
-                                                <div class="aspect">
-                                                    <a href="http://www.starwars
-                                                    .com/news/marvel-star-wars-the-original-marvel-years-omnibus-first-look">
-    {#                                                    <img src="http://img.lum.dolimg.com/v1/images/image_66fb44dd.jpeg?region=0%2C729%2C1404%2C702&amp;width=768"#}
-    {#                                                     class="thumb"> #}
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="content-wrapper   ">
-                                                <div class="bedazzlement"></div>
-                                                <div class="content-bumper">
-                                                    <div class="content-info"><h3 class="title"><a
-                                                            href="http://www.starwars.com/news/marvel-star-wars-the-original-marvel-years-omnibus-first-look">
-                                                        Marvel’s Star Wars: The Original Marvel Years
-                                                        Omnibus – First Look! </a></h3>
-
-                                                        <div class="desc-sizer"><p class="desc">
-                                                            Announcing a massive new collection coming
-                                                            January 2015!</p></div>
-                                                    </div>
-                                                </div>
-                                                <div class="metadata">
-                                                    <div class="anchored-text"><h4
-                                                            class="category-info"><span
-                                                            class="content-icon news-icon"></span> <span
-                                                            class="category-name">news</span></h4></div>
-                                                </div>
-                                                <div class="decal"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="building-block-config el3_5B news-content third image-top  ratio-2x1 short  mob-width-full mob-image-top          ">
-                            <div class="building-block  ">
-                                <div class="building-block-aspect">
-                                    <div class="building-block-padding">
-                                        <div class="building-block-wrapper">
-                                            <div class="image-wrapper">
-                                                <div class="aspect">
-                                                    <a href="http://www.starwars.com/news/from-world-war-to-star-wars-rise-of-an-empire">
-    {#                                                    <img src="http://img.lum.dolimg.com/v1/images/image_047e9cad#}
-    {#                                                    .jpeg?region=0%2C0%2C1632%2C816&amp;width=768" class="thumb"> #}
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="content-wrapper   ">
-                                                <div class="bedazzlement"></div>
-                                                <div class="content-bumper">
-                                                    <div class="content-info"><h3 class="title"><a
-                                                            href="http://www.starwars.com/news/from-world-war-to-star-wars-rise-of-an-empire">
-                                                        From World War to Star Wars: Rise of an
-                                                        Empire </a></h3>
-
-                                                        <div class="desc-sizer"><p class="desc">Learn
-                                                            how the formation of Emperor Palpatine's
-                                                            dictatorship closely mirrored that of a
-                                                            real-world tyrant.</p></div>
-                                                    </div>
-                                                </div>
-                                                <div class="metadata     ">
-                                                    <div class="anchored-text"><h4
-                                                            class="category-info"><span
-                                                            class="content-icon news-icon"></span> <span
-                                                            class="category-name">news</span></h4></div>
-                                                </div>
-                                                <div class="decal"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="building-block-config el4_5 news-content   third image-left content-height-fixed ratio-4x3 mini  mob-width-full mob-image-left mob-fixed-height mob-height-tall         ">
-                            <div class="building-block  ">
-                                <div class="building-block-aspect">
-                                    <div class="building-block-padding">
-                                        <div class="building-block-wrapper">
-                                            <div class="image-wrapper">
-                                                <div class="aspect">
-                                                    <a href="http://www.starwars.com/news/hallmarks-2014-star-wars-keepsake-ornaments-special-preview">
-    {#                                                    <img src="http://img.lum.dolimg.com/v1/images/image_0f704510.jpeg?region=294%2C75%2C433%2C325"#}
-    {#                                                     class="thumb"> #}
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="content-wrapper   ">
-                                                <div class="bedazzlement"></div>
-                                                <div class="content-bumper">
-                                                    <div class="content-info"><h3 class="title"><a
-                                                            href="http://www.starwars.com/news/hallmarks-2014-star-wars-keepsake-ornaments-special-preview">
-                                                        Hallmark’s 2014 Star Wars Keepsake Ornaments –
-                                                        Special Preview! </a></h3>
-
-                                                        <div class="desc-sizer"><p class="desc">Bring
-                                                            the power of the Force to your Christmas
-                                                            tree!</p></div>
-                                                    </div>
-                                                </div>
-                                                <div class="metadata     ">
-                                                    <div class="anchored-text"><h4
-                                                            class="category-info"><span
-                                                            class="content-icon news-icon"></span> <span
-                                                            class="category-name">news</span></h4></div>
-                                                </div>
-                                                <div class="decal"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="building-block-config el4_5 video-content   third image-left content-height-fixed ratio-4x3 mini  mob-width-full mob-image-left mob-fixed-height mob-height-tall         ">
-                            <div class="building-block  ">
-                                <div class="building-block-aspect">
-                                    <div class="building-block-padding">
-                                        <div class="building-block-wrapper">
-                                            <div class="image-wrapper">
-                                                <div class="aspect">
-                                                    <a href="http://www.starwars.com/video/droid-designs-chopper-from-star-wars-rebels-comes-to-life">
-    {#                                                    <img src="http://img.lum.dolimg.com/v1/images/image_028fc656.jpeg?region=345%2C146%2C1425%2C1068&amp;width=480"#}
-    {#                                                     class="thumb"> #}
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="content-wrapper   ">
-                                                <div class="bedazzlement"></div>
-                                                <time>4:34</time>
-                                                <div class="content-bumper">
-                                                    <div class="content-info"><h3 class="title"><a
-                                                            href="http://www.starwars.com/video/droid-designs-chopper-from-star-wars-rebels-comes-to-life">
-                                                        Droid Design: Chopper from Star Wars Rebels
-                                                        Comes to Life </a></h3>
-
-                                                        <div class="desc-sizer"><p class="desc">Chopper
-                                                            is the grumpy, lazy, yet ultimately heroic
-                                                            astromech droid of the Star Wars Rebels
-                                                            animated series - and Lucasfilm has brought
-                                                            him to life. Go behind the scenes to see how
-                                                            a fully functioning Chopper was designed,
-                                                            built and introduced to the world.</p></div>
-                                                    </div>
-                                                </div>
-                                                <div class="metadata     ">
-                                                    <div class="anchored-text"><h4
-                                                            class="category-info"><span
-                                                            class="content-icon video-icon"></span>
-                                                        <span class="category-name">video</span></h4>
-                                                    </div>
-                                                </div>
-                                                <div class="decal"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="module-spinner" style="top: 1390px;"><span class="loader"></span></div>
-    </section>
-    <section class="module display-view display" data-module="display">
-        <div class="bound layout-right">
-            <div class="blocks-bound">
-                <div class="blocks-container">
-                    <ul class="blocks-list-view active el3_3-el3_5B">
-                        <div class="building-block-config el3_3 community-content   two-thirds image-left content-height-fixed ratio-2x1 short  mob-width-full mob-image-top          ">
-                            <div class="building-block  ">
-                                <div class="building-block-aspect">
-                                    <div class="building-block-padding">
-                                        <div class="building-block-wrapper">
-                                            <div class="image-wrapper">
-                                                <div class="aspect">
-                                                    <a href="http://www.omaze.com/experiences/starwars-episode-vii"
-                                                       target="_blank">
-    {#                                                    <img src="http://img.lum.dolimg#}
-    {#                                                    .com/v1/images/force-forc-change_cd04221f.jpeg?region=0%2C37%2C1054%2C526"#}
-    {#                                                    class="thumb"> #}
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="content-wrapper   ">
-                                                <div class="bedazzlement"></div>
-                                                <div class="content-bumper">
-                                                    <div class="content-info"><h3 class="title"><a
-                                                            href="http://www.omaze.com/experiences/starwars-episode-vii"
-                                                            target="_blank"> Star Wars: Force for
-                                                        Change </a></h3>
-
-                                                        <div class="desc-sizer"><p class="desc">Get the
-                                                            details on Force for Change, a brand new
-                                                            charitable initiative dedicated to finding
-                                                            creative solutions to some of the world's
-                                                            biggest problems.</p></div>
-                                                    </div>
-                                                </div>
-                                                <div class="metadata     ">
-                                                    <div class="anchored-text"><h4
-                                                            class="category-info"><span
-                                                            class="content-icon community-icon"></span>
-                                                        <span class="category-name">community</span>
-                                                    </h4></div>
-                                                </div>
-                                                <div class="decal"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="building-block-config el3_5B textobject-content block-override-content  third image-top  ratio-2x1 short  mob-width-full mob-image-top          ">
-                            <div class="building-block  promo-override no-bg logo text ">
-                                <div class="building-block-aspect">
-                                    <div class="building-block-padding">
-                                        <div class="building-block-wrapper">
-                                            <div class="image-wrapper">
-                                                <div class="aspect">
-                                                    <a href="">
+{#                </ul>#}
+{##}
+{#                <div id="bar-break"></div>#}
+{#                <ul id="social-links">#}
+{#                    <li><a class="fb" href="" target="_blank" data-cto="social"></a></li>#}
+{#                    <li><a class="tumblr" href="" target="_blank" data-cto="social"></a></li>#}
+{#                    <li><a class="twitter" href="" target="_blank" data-cto="social"></a></li>#}
+{#                    <li><a class="instagram" href="" target="_blank" data-cto="social"></a></li>#}
+{#                    <li><a class="google_plus" href="" target="_blank" data-cto="social"></a></li>#}
+{#                    <li><a class="youtube" href="" target="_blank" data-cto="social"></a></li>#}
+{#                </ul>#}
+{#            </nav>#}
+{#        </div>#}
+{#        <div id="page-overlay"></div>#}
+{#    </div>#}
+{#</div>#}
+{##}
+{#<div id="body-wrapper" class="">#}
+{#<div id="burger-container">#}
+{#<div id="background-styles">#}
+{#    <div class="starfield star-left"></div>#}
+{#    <div class="starfield star-right"></div>#}
+{#    <div class="site-default-gradient">#}
+{#        <div class="safety-color"></div>#}
+{#    </div>#}
+{#    <div id="body-bg">#}
+{#        <div class="safety-color"></div>#}
+{#        <div class="main"></div>#}
+{#        <div class="color-fade"></div>#}
+{#    </div>#}
+{#</div>#}
+{##}
+{#<div id="main-body">#}
+{#<script src="{% get_static_prefix %}js/jquery.min.map.js" type="text/javascript"></script>#}
+{#<script type="text/javascript">window.jQuery || document.write('<script src ="//a.dilcdn.com/sw/jquery-a60447a4b218.js" type="text/javascript"><\/script>')</script>#}
+{#<script src="//a.dilcdn.com/sw/application-e74b0deb5cfc.js" type="text/javascript"></script>#}
+{#<div id="spinner" style="display: none;">#}
+{#    <span class="loader"></span>#}
+{#</div>#}
+{##}
+{#<div id="main">#}
+{#<article id="burger" class="">#}
+{#<div class="overlay"></div>#}
+{#    <section class="module display-view display" data-module="display">#}
+{#        <div class="bound ">#}
+{#            <div class="blocks-bound">#}
+{#                <div class="blocks-container">#}
+{#                    <ul class="blocks-list-view active el2_3A-el2_5-el2_5">#}
+{#                        <div class="building-block-config el2_3A video-content   half image-top  ratio-16x9 medium  mob-width-full mob-image-top          ">#}
+{#                            <div class="building-block  ">#}
+{#                                <div class="building-block-aspect">#}
+{#                                    <div class="building-block-padding">#}
+{#                                        <div class="building-block-wrapper">#}
+{#                                            <div class="image-wrapper">#}
+{#                                                <div class="aspect">#}
+{#                                                    <a href="">Image</a>#}
+{#                                                </div>#}
+{#                                            </div>#}
+{#                                            <div class="content-wrapper">#}
+{#                                                <div class="bedazzlement"></div>#}
+{#                                                <time>2:05</time>#}
+{#                                                <div class="content-bumper">#}
+{#                                                    <div class="content-info"><h3 class="title"><a#}
+{#                                                            href="">Title</a></h3>#}
+{##}
+{#                                                        <div class="desc-sizer"><p class="desc">Description</p></div>#}
+{#                                                    </div>#}
+{#                                                </div>#}
+{#                                                <div class="metadata">#}
+{#                                                    <div class="anchored-text"><h4#}
+{#                                                            class="category-info"><span#}
+{#                                                            class="content-icon video-icon"></span>#}
+{#                                                        <span class="category-name">video</span></h4>#}
+{#                                                    </div>#}
+{#                                                </div>#}
+{#                                                <div class="decal"></div>#}
+{#                                            </div>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        <div class="building-block-config el2_5 news-content   quarter image-top  ratio-1x1 medium  mob-width-full mob-image-left mob-fixed-height mob-height-tall         ">#}
+{#                            <div class="building-block">#}
+{#                                <div class="building-block-aspect">#}
+{#                                    <div class="building-block-padding">#}
+{#                                        <div class="building-block-wrapper">#}
+{#                                            <div class="image-wrapper">#}
+{#                                                <div class="aspect">#}
+{#                                                    <a href="">Title</a>#}
+{#                                                </div>#}
+{#                                            </div>#}
+{#                                            <div class="content-wrapper   ">#}
+{#                                                <div class="bedazzlement"></div>#}
+{#                                                <div class="content-bumper">#}
+{#                                                    <div class="content-info"><h3 class="title"><a#}
+{#                                                            href="">Title</a></h3>#}
+{##}
+{#                                                        <div class="desc-sizer"><p class="desc">Description</p></div>#}
+{#                                                    </div>#}
+{#                                                </div>#}
+{#                                                <div class="metadata">#}
+{#                                                    <div class="anchored-text"><h4#}
+{#                                                            class="category-info"><span#}
+{#                                                            class="content-icon news-icon"></span> <span#}
+{#                                                            class="category-name">news</span></h4></div>#}
+{#                                                </div>#}
+{#                                                <div class="decal"></div>#}
+{#                                            </div>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        <div class="building-block-config el2_5 news-content   quarter image-top  ratio-1x1 medium  mob-width-full mob-image-left mob-fixed-height mob-height-tall         ">#}
+{#                            <div class="building-block  ">#}
+{#                                <div class="building-block-aspect">#}
+{#                                    <div class="building-block-padding">#}
+{#                                        <div class="building-block-wrapper">#}
+{#                                            <div class="image-wrapper">#}
+{#                                                <div class="aspect">#}
+{#                                                    <a href="">Title</a>#}
+{#                                                </div>#}
+{#                                            </div>#}
+{#                                            <div class="content-wrapper   ">#}
+{#                                                <div class="bedazzlement"></div>#}
+{#                                                <div class="content-bumper">#}
+{#                                                    <div class="content-info"><h3 class="title"><a#}
+{#                                                            href="">Title</a>#}
+{#                                                    </h3>#}
+{##}
+{#                                                        <div class="desc-sizer"><p class="desc">Description</p>#}
+{#                                                        </div>#}
+{#                                                    </div>#}
+{#                                                </div>#}
+{#                                                <div class="metadata">#}
+{#                                                    <div class="anchored-text"><h4#}
+{#                                                            class="category-info"><span#}
+{#                                                            class="content-icon news-icon"></span> <span#}
+{#                                                            class="category-name">news</span></h4></div>#}
+{#                                                </div>#}
+{#                                                <div class="decal"></div>#}
+{#                                            </div>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </ul>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#        <div class="module-spinner"><span class="loader"></span></div>#}
+{#    </section>#}
+{#    <section class="module display-view display" data-module="display">#}
+{#        <div class="bound ">#}
+{#            <div class="blocks-bound">#}
+{#                <div class="blocks-container">#}
+{#                    <ul class="blocks-list-view active el3_5B-el3_5B-el4_5-el4_5">#}
+{#                        <div class="building-block-config el3_5B news-content   third image-top  ratio-2x1 short  mob-width-full mob-image-top          ">#}
+{#                            <div class="building-block  ">#}
+{#                                <div class="building-block-aspect">#}
+{#                                    <div class="building-block-padding">#}
+{#                                        <div class="building-block-wrapper">#}
+{#                                            <div class="image-wrapper">#}
+{#                                                <div class="aspect">#}
+{#                                                    <a href="">Title</a>#}
+{#                                                </div>#}
+{#                                            </div>#}
+{#                                            <div class="content-wrapper">#}
+{#                                                <div class="bedazzlement"></div>#}
+{#                                                <div class="content-bumper">#}
+{#                                                    <div class="content-info"><h3 class="title"><a#}
+{#                                                            href="">Title</a></h3>#}
+{##}
+{#                                                        <div class="desc-sizer"><p class="desc">Description</p></div>#}
+{#                                                    </div>#}
+{#                                                </div>#}
+{#                                                <div class="metadata">#}
+{#                                                    <div class="anchored-text"><h4#}
+{#                                                            class="category-info"><span#}
+{#                                                            class="content-icon news-icon"></span> <span#}
+{#                                                            class="category-name">news</span></h4></div>#}
+{#                                                </div>#}
+{#                                                <div class="decal"></div>#}
+{#                                            </div>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        <div class="building-block-config el3_5B news-content third image-top  ratio-2x1 short  mob-width-full mob-image-top          ">#}
+{#                            <div class="building-block  ">#}
+{#                                <div class="building-block-aspect">#}
+{#                                    <div class="building-block-padding">#}
+{#                                        <div class="building-block-wrapper">#}
+{#                                            <div class="image-wrapper">#}
+{#                                                <div class="aspect">#}
+{#                                                    <a href="">Title</a>#}
+{#                                                </div>#}
+{#                                            </div>#}
+{#                                            <div class="content-wrapper">#}
+{#                                                <div class="bedazzlement"></div>#}
+{#                                                <div class="content-bumper">#}
+{#                                                    <div class="content-info"><h3 class="title"><a#}
+{#                                                            href="">Title</a></h3>#}
+{##}
+{#                                                        <div class="desc-sizer"><p class="desc">Description</p></div>#}
+{#                                                    </div>#}
+{#                                                </div>#}
+{#                                                <div class="metadata     ">#}
+{#                                                    <div class="anchored-text"><h4#}
+{#                                                            class="category-info"><span#}
+{#                                                            class="content-icon news-icon"></span> <span#}
+{#                                                            class="category-name">news</span></h4></div>#}
+{#                                                </div>#}
+{#                                                <div class="decal"></div>#}
+{#                                            </div>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        <div class="building-block-config el4_5 news-content   third image-left content-height-fixed ratio-4x3 mini  mob-width-full mob-image-left mob-fixed-height mob-height-tall         ">#}
+{#                            <div class="building-block  ">#}
+{#                                <div class="building-block-aspect">#}
+{#                                    <div class="building-block-padding">#}
+{#                                        <div class="building-block-wrapper">#}
+{#                                            <div class="image-wrapper">#}
+{#                                                <div class="aspect">#}
+{#                                                    <a href="">Title</a>#}
+{#                                                </div>#}
+{#                                            </div>#}
+{#                                            <div class="content-wrapper">#}
+{#                                                <div class="bedazzlement"></div>#}
+{#                                                <div class="content-bumper">#}
+{#                                                    <div class="content-info"><h3 class="title"><a#}
+{#                                                            href="">Title</a></h3>#}
+{##}
+{#                                                        <div class="desc-sizer"><p class="desc">Description</p></div>#}
+{#                                                    </div>#}
+{#                                                </div>#}
+{#                                                <div class="metadata     ">#}
+{#                                                    <div class="anchored-text"><h4#}
+{#                                                            class="category-info"><span#}
+{#                                                            class="content-icon news-icon"></span> <span#}
+{#                                                            class="category-name">news</span></h4></div>#}
+{#                                                </div>#}
+{#                                                <div class="decal"></div>#}
+{#                                            </div>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        <div class="building-block-config el4_5 video-content   third image-left content-height-fixed ratio-4x3 mini  mob-width-full mob-image-left mob-fixed-height mob-height-tall         ">#}
+{#                            <div class="building-block  ">#}
+{#                                <div class="building-block-aspect">#}
+{#                                    <div class="building-block-padding">#}
+{#                                        <div class="building-block-wrapper">#}
+{#                                            <div class="image-wrapper">#}
+{#                                                <div class="aspect">#}
+{#                                                    <a href="">Image</a>#}
+{#                                                </div>#}
+{#                                            </div>#}
+{#                                            <div class="content-wrapper   ">#}
+{#                                                <div class="bedazzlement"></div>#}
+{#                                                <time>4:34</time>#}
+{#                                                <div class="content-bumper">#}
+{#                                                    <div class="content-info"><h3 class="title"><a#}
+{#                                                            href=""">Title</a></h3>#}
+{##}
+{#                                                        <div class="desc-sizer"><p class="desc">Description</p></div>#}
+{#                                                    </div>#}
+{#                                                </div>#}
+{#                                                <div class="metadata">#}
+{#                                                    <div class="anchored-text"><h4#}
+{#                                                            class="category-info"><span#}
+{#                                                            class="content-icon video-icon"></span>#}
+{#                                                        <span class="category-name">video</span></h4>#}
+{#                                                    </div>#}
+{#                                                </div>#}
+{#                                                <div class="decal"></div>#}
+{#                                            </div>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </ul>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#        <div class="module-spinner" style="top: 1390px;"><span class="loader"></span></div>#}
+{#    </section>#}
+{#    <section class="module display-view display" data-module="display">#}
+{#        <div class="bound layout-right">#}
+{#            <div class="blocks-bound">#}
+{#                <div class="blocks-container">#}
+{#                    <ul class="blocks-list-view active el3_3-el3_5B">#}
+{#                        <div class="building-block-config el3_3 community-content   two-thirds image-left content-height-fixed ratio-2x1 short  mob-width-full mob-image-top          ">#}
+{#                            <div class="building-block  ">#}
+{#                                <div class="building-block-aspect">#}
+{#                                    <div class="building-block-padding">#}
+{#                                        <div class="building-block-wrapper">#}
+{#                                            <div class="image-wrapper">#}
+{#                                                <div class="aspect">#}
+{#                                                    <a href="" target="_blank">Image</a>#}
+{#                                                </div>#}
+{#                                            </div>#}
+{#                                            <div class="content-wrapper">#}
+{#                                                <div class="bedazzlement"></div>#}
+{#                                                <div class="content-bumper">#}
+{#                                                    <div class="content-info"><h3 class="title"><a href=""#}
+{#                                                            target="_blank">Title</a></h3>#}
+{##}
+{#                                                        <div class="desc-sizer"><p class="desc">Description</p></div>#}
+{#                                                    </div>#}
+{#                                                </div>#}
+{#                                                <div class="metadata">#}
+{#                                                    <div class="anchored-text">#}
+{#                                                        <h4 class="category-info">#}
+{#                                                            <span class="content-icon community-icon"></span>#}
+{#                                                            <span class="category-name">community</span>#}
+{#                                                        </h4>#}
+{#                                                    </div>#}
+{#                                                </div>#}
+{#                                                <div class="decal"></div>#}
+{#                                            </div>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        <div class="building-block-config el3_5B textobject-content block-override-content  third image-top  ratio-2x1 short  mob-width-full mob-image-top          ">#}
+{#                            <div class="building-block  promo-override no-bg logo text ">#}
+{#                                <div class="building-block-aspect">#}
+{#                                    <div class="building-block-padding">#}
+{#                                        <div class="building-block-wrapper">#}
+{#                                            <div class="image-wrapper">#}
+{#                                                <div class="aspect">#}
+{#                                                    <a href="">#}
     {#                                                    <img src="" class="thumb"> #}
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="content-wrapper   ">
-                                                <div class="bedazzlement"></div>
-                                                <div class="content-bumper">
-                                                    <div class="content-info">
-                                                        <div class="logo-image-wrapper">
-    {#                                                        <img src="http://img.lum.dolimg.com/v1/images/this-day_df434af6.png" class="logo-image">#}
-                                                        </div>
-                                                        <h3 class="title"> 07.17.03 </h3>
-
-                                                        <div class="desc-sizer"><p class="desc">Pink
-                                                            Five, a short about an X-wing pilot named
-                                                            Stacey, wins the George Lucas Select Award
-                                                            at the Star Wars Fan Film Awards at the San
-                                                            Diego Comic-Con International</p></div>
-                                                    </div>
-                                                </div>
-                                                <div class="metadata">
-                                                    <div class="anchored-text"><h4
-                                                            class="category-info"><span
-                                                            class="content-icon textobject-icon"></span>
-                                                        <span class="category-name">textobject</span>
-                                                    </h4></div>
-                                                </div>
-                                                <div class="decal"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="module-spinner" style="top: 1390px;"><span class="loader"></span></div>
-    </section>
-    <section class="module display-view display" data-module="display">
-        <div class="bound ">
-            <div class="module_header"><h2 class="module_title">Spotlight of the Week //</h2></div>
-            <div class="blocks-bound">
-                <div class="blocks-container">
-                    <ul class="blocks-list-view active el2_3A-el4_4-el4_4-el4_4">
-                        <div class="building-block-config el2_3A databank-content   half image-top  ratio-16x9 medium  mob-width-full mob-image-top          ">
-                            <div class="building-block  ">
-                                <div class="building-block-aspect">
-                                    <div class="building-block-padding">
-                                        <div class="building-block-wrapper">
-                                            <div class="image-wrapper">
-                                                <div class="aspect">
-                                                    <a href="http://www.starwars.com/databank/jawa">
+{#                                                    </a>#}
+{#                                                </div>#}
+{#                                            </div>#}
+{#                                            <div class="content-wrapper   ">#}
+{#                                                <div class="bedazzlement"></div>#}
+{#                                                <div class="content-bumper">#}
+{#                                                    <div class="content-info">#}
+{#                                                        <div class="logo-image-wrapper">#}
+{#                                                            Image Goes Here#}
+{#                                                        </div>#}
+{#                                                        <h3 class="title"> 07.17.03 </h3>#}
+{##}
+{#                                                        <div class="desc-sizer"><p class="desc">Description</p></div>#}
+{#                                                    </div>#}
+{#                                                </div>#}
+{#                                                <div class="metadata">#}
+{#                                                    <div class="anchored-text"><h4#}
+{#                                                            class="category-info"><span#}
+{#                                                            class="content-icon textobject-icon"></span>#}
+{#                                                        <span class="category-name">textobject</span>#}
+{#                                                    </h4></div>#}
+{#                                                </div>#}
+{#                                                <div class="decal"></div>#}
+{#                                            </div>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </ul>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#        <div class="module-spinner" style="top: 1390px;"><span class="loader"></span></div>#}
+{#    </section>#}
+{#    <section class="module display-view display" data-module="display">#}
+{#        <div class="bound ">#}
+{#            <div class="module_header"><h2 class="module_title">Spotlight of the Week //</h2></div>#}
+{#            <div class="blocks-bound">#}
+{#                <div class="blocks-container">#}
+{#                    <ul class="blocks-list-view active el2_3A-el4_4-el4_4-el4_4">#}
+{#                        <div class="building-block-config el2_3A databank-content half image-top ratio-16x9 medium#}
+{#                        mob-width-full mob-image-top">#}
+{#                            <div class="building-block">#}
+{#                                <div class="building-block-aspect">#}
+{#                                    <div class="building-block-padding">#}
+{#                                        <div class="building-block-wrapper">#}
+{#                                            <div class="image-wrapper">#}
+{#                                                <div class="aspect">#}
+{#                                                    <a href="http://www.starwars.com/databank/jawa">#}
     {#                                                    <img src="http://img.lum.dolimg.com/v1/images/jawas_42e63e07.jpeg?region=866%2C10%2C1068%2C601"#}
     {#                                                     class="thumb"> #}
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="content-wrapper   ">
-                                                <div class="bedazzlement"></div>
-                                                <div class="content-bumper">
-                                                    <div class="content-info"><h3 class="title"><a
-                                                            href="http://www.starwars.com/databank/jawa">
-                                                        Jawa </a></h3>
+{#                                                    </a>#}
+{#                                                </div>#}
+{#                                            </div>#}
+{#                                            <div class="content-wrapper   ">#}
+{#                                                <div class="bedazzlement"></div>#}
+{#                                                <div class="content-bumper">#}
+{#                                                    <div class="content-info"><h3 class="title"><a#}
+{#                                                            href="">Title</a></h3>#}
+{##}
+{#                                                        <div class="desc-sizer"><p class="desc">Description</p></div>#}
+{#                                                    </div>#}
+{#                                                </div>#}
+{#                                                <div class="metadata">#}
+{#                                                    <div class="anchored-text"><h4#}
+{#                                                            class="category-info"><span#}
+{#                                                            class="content-icon databank-icon"></span>#}
+{#                                                        <span class="category-name">databank</span></h4>#}
+{#                                                    </div>#}
+{#                                                </div>#}
+{#                                                <div class="decal"></div>#}
+{#                                            </div>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        <div class="building-block-config el4_4 video-content half image-left content-height-fixed ratio-16x9 mini  mob-width-full mob-image-left mob-fixed-height mob-height-medium         ">#}
+{#                            <div class="building-block">#}
+{#                                <div class="building-block-aspect">#}
+{#                                    <div class="building-block-padding">#}
+{#                                        <div class="building-block-wrapper">#}
+{#                                            <div class="image-wrapper">#}
+{#                                                <div class="aspect">#}
+{#                                                    <a href="">Image</a>#}
+{#                                                </div>#}
+{#                                            </div>#}
+{#                                            <div class="content-wrapper   ">#}
+{#                                                <div class="bedazzlement"></div>#}
+{#                                                <time>1:10</time>#}
+{#                                                <div class="content-bumper">#}
+{#                                                    <div class="content-info"><h3 class="title"><a#}
+{#                                                            href="">Title</a></h3>#}
+{##}
+{#                                                        <div class="desc-sizer"><p class="desc">Description</p>#}
+{#                                                        </div>#}
+{#                                                    </div>#}
+{#                                                </div>#}
+{#                                                <div class="metadata">#}
+{#                                                    <div class="anchored-text">#}
+{#                                                        <h4 class="category-info">#}
+{#                                                            <span class="content-icon video-icon"></span>#}
+{#                                                            <span class="category-name">Category Name</span>#}
+{#                                                        </h4>#}
+{#                                                    </div>#}
+{#                                                </div>#}
+{#                                                <div class="decal"></div>#}
+{#                                            </div>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        <div class="building-block-config el4_4 gamesapps-content half image-left content-height-fixed ratio-16x9 mini  mob-width-full mob-image-left mob-fixed-height mob-height-medium">#}
+{#                            <div class="building-block  ">#}
+{#                                <div class="building-block-aspect">#}
+{#                                    <div class="building-block-padding">#}
+{#                                        <div class="building-block-wrapper">#}
+{#                                            <div class="image-wrapper">#}
+{#                                                <div class="aspect">#}
+{#                                                    <a href="">Image</a>#}
+{#                                                </div>#}
+{#                                            </div>#}
+{#                                            <div class="content-wrapper">#}
+{#                                                <div class="bedazzlement"></div>#}
+{#                                                <div class="content-bumper">#}
+{#                                                    <div class="content-info"><h3 class="title"><a href="">Title Link</a></h3>#}
+{##}
+{#                                                        <div class="desc-sizer">#}
+{#                                                            <p class="desc">Description</p>#}
+{#                                                        </div>#}
+{#                                                    </div>#}
+{#                                                </div>#}
+{#                                                <div class="metadata">#}
+{#                                                    <div class="anchored-text">#}
+{#                                                        <h4 class="category-info">#}
+{#                                                            <span class="content-icon gamesapps-icon"></span>#}
+{#                                                            <span class="category-name">Category Name</span>#}
+{#                                                        </h4>#}
+{#                                                    </div>#}
+{#                                                </div>#}
+{#                                                <div class="decal"></div>#}
+{#                                            </div>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        <div class="building-block-config el4_4 databank-content half image-left content-height-fixed#}
+{#                         ratio-16x9 mini  mob-width-full mob-image-left mob-fixed-height mob-height-medium ">#}
+{#                            <div class="building-block  ">#}
+{#                                <div class="building-block-aspect">#}
+{#                                    <div class="building-block-padding">#}
+{#                                        <div class="building-block-wrapper">#}
+{#                                            <div class="image-wrapper">#}
+{#                                                <div class="aspect">#}
+{#                                                    <a href="">Image</a>#}
+{#                                                </div>#}
+{#                                            </div>#}
+{#                                            <div class="content-wrapper   ">#}
+{#                                                <div class="bedazzlement"></div>#}
+{#                                                <div class="content-bumper">#}
+{#                                                    <div class="content-info">#}
+{#                                                        <h3 class="title"><a href="">Title</a></h3>#}
+{#                                                        <div class="desc-sizer"><p class="desc">Description</p></div>#}
+{#                                                    </div>#}
+{#                                                </div>#}
+{#                                                <div class="metadata">#}
+{#                                                    <div class="anchored-text">#}
+{#                                                        <h4 class="category-info">#}
+{#                                                            <span class="content-icon databank-icon"></span>#}
+{#                                                            <span class="category-name">Category Name</span>#}
+{#                                                        </h4>#}
+{#                                                    </div>#}
+{#                                                </div>#}
+{#                                                <div class="decal"></div>#}
+{#                                            </div>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </ul>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#        <div class="module-spinner" style="top: 262.4375px;"><span class="loader"></span></div>#}
+{#    </section>#}
+{#    <section class="module display-view display" data-module="display">#}
+{#        <div class="bound">#}
+{#            <div class="module_header">#}
+{#                <h2 class="module_title">Title</h2>#}
+{#            </div>#}
+{#            <div class="blocks-bound">#}
+{#                <div class="blocks-container">#}
+{#                    <ul class="blocks-list-view active el2_3A-el4_4-el3_4">#}
+{#                        <div class="building-block-config el2_3A video-content half image-top ratio-16x9 medium mob-width-full mob-image-top">#}
+{#                            <div class="building-block">#}
+{#                                <div class="building-block-aspect">#}
+{#                                    <div class="building-block-padding">#}
+{#                                        <div class="building-block-wrapper">#}
+{#                                            <div class="image-wrapper">#}
+{#                                                <div class="aspect">#}
+{#                                                    <a href="">Image</a>#}
+{#                                                </div>#}
+{#                                            </div>#}
+{#                                            <div class="content-wrapper">#}
+{#                                                <div class="bedazzlement"></div>#}
+{#                                                <time>0:59</time>#}
+{#                                                <div class="content-bumper">#}
+{#                                                    <div class="content-info">#}
+{#                                                        <h3 class="title"><a href="">Content</a></h3>#}
+{#                                                        <div class="desc-sizer"><p class="desc">Get your first extended look at the highly anticipated series.</p></div>#}
+{#                                                    </div>#}
+{#                                                </div>#}
+{#                                                <div class="metadata">#}
+{#                                                    <div class="anchored-text"><h4#}
+{#                                                            class="category-info"><span#}
+{#                                                            class="content-icon video-icon"></span>#}
+{#                                                        <span class="category-name">video</span></h4>#}
+{#                                                    </div>#}
+{#                                                </div>#}
+{#                                                <div class="decal"></div>#}
+{#                                            </div>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        <div class="building-block-config el4_4 video-content half image-left content-height-fixed ratio-16x9 mini  mob-width-full mob-image-left mob-fixed-height mob-height-medium         ">#}
+{#                            <div class="building-block">#}
+{#                                <div class="building-block-aspect">#}
+{#                                    <div class="building-block-padding">#}
+{#                                        <div class="building-block-wrapper">#}
+{#                                            <div class="image-wrapper">#}
+{#                                                <div class="aspect">#}
+{#                                                    <a href="">Image</a>#}
+{#                                                </div>#}
+{#                                            </div>#}
+{#                                            <div class="content-wrapper">#}
+{#                                                <div class="bedazzlement"></div>#}
+{#                                                <time>0:45</time>#}
+{#                                                <div class="content-bumper">#}
+{#                                                    <div class="content-info">#}
+{#                                                        <h3 class="title"><a href="">Link Here</a></h3>#}
+{#                                                        <div class="desc-sizer"><p class="desc">Hera,#}
+{#                                                            captain of the Ghost, pilots her starship#}
+{#                                                            during a battle with two TIE fighters.</p>#}
+{#                                                        </div>#}
+{#                                                    </div>#}
+{#                                                </div>#}
+{#                                                <div class="metadata">#}
+{#                                                    <div class="anchored-text">#}
+{#                                                        <h4 class="category-info">#}
+{#                                                            <span class="content-icon video-icon"></span>#}
+{#                                                            <span class="category-name">video</span>#}
+{#                                                        </h4>#}
+{#                                                    </div>#}
+{#                                                </div>#}
+{#                                                <div class="decal"></div>#}
+{#                                            </div>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        <div class="building-block-config el3_4 video-content   half image-left content-height-fixed ratio-4x3 short  mob-width-full mob-image-left mob-fixed-height mob-height-tall         ">#}
+{#                            <div class="building-block  ">#}
+{#                                <div class="building-block-aspect">#}
+{#                                    <div class="building-block-padding">#}
+{#                                        <div class="building-block-wrapper">#}
+{#                                            <div class="image-wrapper">#}
+{#                                                <div class="aspect">#}
+{#                                                    <a href="">Img Goes Here</a>#}
+{#                                                </div>#}
+{#                                            </div>#}
+{#                                            <div class="content-wrapper">#}
+{#                                                <div class="bedazzlement"></div>#}
+{#                                                <time>3:29</time>#}
+{#                                                <div class="content-bumper">#}
+{#                                                    <div class="content-info">#}
+{#                                                        <h3 class="title"><a href="">Star Wars Rebels: Meet Agent Kallus, Imperial Enforcer </a></h3>#}
+{##}
+{#                                                        <div class="desc-sizer">#}
+{#                                                            <p class="desc">Agent Kallus, one of the Empire’s leading enforcers in the upcoming Star Wars Rebels animated series, is a major threat for the Ghost crew’s small band of heroes. In this special behind-the-scenes video, actor David Oyelowo discusses playing the new villain.</p>#}
+{#                                                        </div>#}
+{#                                                    </div>#}
+{#                                                </div>#}
+{#                                                <div class="metadata">#}
+{#                                                    <div class="anchored-text">#}
+{#                                                        <h4 class="category-info">#}
+{#                                                            <span class="content-icon video-icon"></span>#}
+{#                                                            <span class="category-name">video</span>#}
+{#                                                        </h4>#}
+{#                                                    </div>#}
+{#                                                </div>#}
+{#                                                <div class="decal"></div>#}
+{#                                            </div>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </ul>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#        <div class="module-spinner" style="top: 262.4375px;"><span class="loader"></span></div>#}
+{#    </section>#}
+{#    <section class="module display-view display" data-module="display">#}
+{#        <div class="bound ">#}
+{#            <div class="module_header"><h2 class="module_title">Events //</h2></div>#}
+{#            <div class="blocks-bound">#}
+{#                <div class="blocks-container">#}
+{#                    <ul class="blocks-list-view active el3_3-el3_5B">#}
+{#                        <div class="building-block-config el3_3 events-content two-thirds image-left content-height-fixed ratio-2x1 short  mob-width-full mob-image-top">#}
+{#                            <div class="building-block">#}
+{#                                <div class="building-block-aspect">#}
+{#                                    <div class="building-block-padding">#}
+{#                                        <div class="building-block-wrapper">#}
+{#                                            <div class="image-wrapper">#}
+{#                                                <div class="aspect">#}
+{#                                                    <a href="">Img Goes Here</a>#}
+{#                                                </div>#}
+{#                                            </div>#}
+{#                                            <div class="content-wrapper">#}
+{#                                                <div class="bedazzlement"></div>#}
+{#                                                <div class="content-bumper">#}
+{#                                                    <div class="content-info"><h3 class="title"><a#}
+{#                                                            href=""> Link Holder </a>#}
+{#                                                    </h3>#}
+{##}
+{#                                                        <div class="desc-sizer"><p class="desc">Copy Holder</p>#}
+{#                                                        </div>#}
+{#                                                    </div>#}
+{#                                                </div>#}
+{#                                                <div class="metadata">#}
+{#                                                    <div class="anchored-text">#}
+{#                                                        <h4 class="category-info">#}
+{#                                                            <span class="content-icon events-icon"></span>#}
+{#                                                            <span class="category-name">events</span>#}
+{#                                                        </h4>#}
+{#                                                    </div>#}
+{#                                                </div>#}
+{#                                                <div class="decal"></div>#}
+{#                                            </div>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        <div class="building-block-config el3_5B events-content third image-top ratio-2x1 short mob-width-full mob-image-top">#}
+{#                            <div class="building-block">#}
+{#                                <div class="building-block-aspect">#}
+{#                                    <div class="building-block-padding">#}
+{#                                        <div class="building-block-wrapper">#}
+{#                                            <div class="image-wrapper">#}
+{#                                                <div class="aspect">#}
+{#                                                    <a href=""></a>#}
+{#                                                </div>#}
+{#                                            </div>#}
+{#                                            <div class="content-wrapper   ">#}
+{#                                                <div class="bedazzlement"></div>#}
+{#                                                <div class="content-bumper">#}
+{#                                                    <div class="content-info">#}
+{#                                                        <h3 class="title">#}
+{#                                                            <a href=""> Star Wars Reads Day </a>#}
+{#                                                        </h3>#}
+{##}
+{#                                                        <div class="desc-sizer">#}
+{#                                                            <p class="desc">Star Wars Reads Day, the annual celebration of reading and Star Wars, returns to libraries and booksellers October 11, 2014.</p>#}
+{#                                                        </div>#}
+{#                                                    </div>#}
+{#                                                </div>#}
+{#                                                <div class="metadata">#}
+{#                                                    <div class="anchored-text">#}
+{#                                                        <h4 class="category-info">#}
+{#                                                            <span class="content-icon events-icon"></span>#}
+{#                                                            <span class="category-name">events</span>#}
+{#                                                        </h4>#}
+{#                                                    </div>#}
+{#                                                </div>#}
+{#                                                <div class="decal"></div>#}
+{#                                            </div>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </ul>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#        <div class="module-spinner" style="top: 192.9375px;"><span class="loader"></span></div>#}
+{#    </section>#}
+{#    <section class="module display-view lazy_display" data-module="lazy_display">#}
+{#        <div class="bound">#}
+{#            <div class="module_header"><h2 class="module_title">Around the Web //</h2></div>#}
+{#            <div class="blocks-bound">#}
+{#                <div class="blocks-container">#}
+{#                    <ul class="blocks-list-view active el3_5B-el3_5B-el3_5B">#}
+{#                        <div class="building-block-config el3_5B promo-content block-override-content  third image-top  ratio-2x1 short  mob-width-full mob-image-top          ">#}
+{#                            <div class="building-block  promo-override no-bg no-logo text ">#}
+{#                                <div class="building-block-aspect">#}
+{#                                    <div class="building-block-padding">#}
+{#                                        <div class="building-block-wrapper">#}
+{#                                            <div class="image-wrapper">#}
+{#                                                <div class="aspect"><a href="" target="_blank"><img src="" class="thumb"></a></div>#}
+{#                                            </div>#}
+{#                                            <div class="content-wrapper">#}
+{#                                                <div class="bedazzlement"></div>#}
+{#                                                <div class="content-bumper">#}
+{#                                                    <div class="content-info"><h3 class="title"><a href="" target="_blank"> Revisiting Star Wars: Shadows of the Empire </a></h3>#}
+{#                                                        <div class="desc-sizer">#}
+{#                                                            <p class="desc">"Star Wars: Shadows of the Empire" was the transmedia effort to fill the gap between "The Empire Strikes Back" &amp; "Return of the Jedi." </p>#}
+{#                                                        </div>#}
+{#                                                    </div>#}
+{#                                                </div>#}
+{#                                                <div class="metadata">#}
+{#                                                    <div class="anchored-text">#}
+{#                                                        <h4 class="category-info">#}
+{#                                                            <span class="category-info"><span>#}
+{#                                                            <span class="content-icon promo-icon"></span>#}
+{#                                                            <span class="category-name">promo</span>#}
+{#                                                        </h4>#}
+{#                                                    </div>#}
+{#                                                </div>#}
+{#                                                <div class="decal"></div>#}
+{#                                            </div>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        <div class="building-block-config el3_5B promo-content block-override-content third image-top ratio-2x1 short mob-width-full mob-image-top          ">#}
+{#                            <div class="building-block promo-override no-bg no-logo text">#}
+{#                                <div class="building-block-aspect">#}
+{#                                    <div class="building-block-padding">#}
+{#                                        <div class="building-block-wrapper">#}
+{#                                            <div class="image-wrapper">#}
+{#                                                <div class="aspect">#}
+{#                                                    <a href="" target="_blank">#}
+{#                                                        <img src="" class="thumb">#}
+{#                                                    </a>#}
+{#                                                </div>#}
+{#                                            </div>#}
+{#                                            <div class="content-wrapper">#}
+{#                                                <div class="bedazzlement"></div>#}
+{#                                                <div class="content-bumper">#}
+{#                                                    <div class="content-info">#}
+{#                                                        <h3 class="title">#}
+{#                                                            <a href="" target="_blank">Uniqlo Grand Prix 2015: Star Wars </a>#}
+{#                                                        </h3>#}
+{##}
+{#                                                        <div class="desc-sizer">#}
+{#                                                            <p class="desc">The Japanese brand taps George Lucas's empire for the annual competition.</p>#}
+{#                                                        </div>#}
+{#                                                    </div>#}
+{#                                                </div>#}
+{#                                                <div class="metadata">#}
+{#                                                    <div class="anchored-text">#}
+{#                                                        <h4 class="category-info">#}
+{#                                                            <span class="content-icon promo-icon"></span>#}
+{#                                                            <span class="category-name">promo</span>#}
+{#                                                        </h4>#}
+{#                                                    </div>#}
+{#                                                </div>#}
+{#                                                <div class="decal"></div>#}
+{#                                            </div>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        <div class="building-block-config el3_5B promo-content block-override-content  third image-top  ratio-2x1 short  mob-width-full mob-image-top">#}
+{#                            <div class="building-block promo-override no-bg no-logo text">#}
+{#                                <div class="building-block-aspect">#}
+{#                                    <div class="building-block-padding">#}
+{#                                        <div class="building-block-wrapper">#}
+{#                                            <div class="image-wrapper">#}
+{#                                                <div class="aspect">#}
+{#                                                    <a href="" target="_blank"> <img src="" class="thumb"> </a>#}
+{#                                                </div>#}
+{#                                            </div>#}
+{#                                            <div class="content-wrapper">#}
+{#                                                <div class="bedazzlement"></div>#}
+{#                                                <div class="content-bumper">#}
+{#                                                    <div class="content-info">#}
+{#                                                        <h3 class="title"><a href="" target="_blank"> May the Force be with you – all the way to the prom. </a></h3>#}
+{#                                                        <div class="desc-sizer"><p class="desc">Teenager Mollie Baker was given a special armed guard to get her to her prom at Chilworth Manor.</p></div>#}
+{#                                                    </div>#}
+{#                                                </div>#}
+{#                                                <div class="metadata">#}
+{#                                                    <div class="anchored-text">#}
+{#                                                        <h4 class="category-info">#}
+{#                                                            <span class="content-icon promo-icon"></span>#}
+{#                                                            <span class="category-name">promo</span>#}
+{#                                                        </h4>#}
+{#                                                    </div>#}
+{#                                                </div>#}
+{#                                                <div class="decal"></div>#}
+{#                                            </div>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </ul>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#        <div class="module-spinner" style="top: 192.9375px;"><span class="loader"></span></div>#}
+{#    </section>#}
+{#</article>#}
+{#</div>#}
+{#</div>#}
+{#</div>#}
 
-                                                        <div class="desc-sizer"><p class="desc">Jawas
-                                                            are meter-tall humanoids completely hidden
-                                                            behind rough, hand-woven robes. Their faces
-                                                            are concealed within the dark folds of a
-                                                            cowl, from which peer their sickly glowing
-                                                            yellow eyes. They comb the deserts of
-                                                            Tatooine in search of discarded scrap and
-                                                            wayward mechanicals. Using their
-                                                            cobbled-together weaponry, they can
-                                                            incapacitate droids and drag them to their
-                                                            treaded fortress-homes, immense sand-scarred
-                                                            vehicles known as sandcrawlers. They sell
-                                                            their hastily refurbished junk to moisture
-                                                            farmers who are hard-pressed to find a
-                                                            better selection elsewhere.</p></div>
-                                                    </div>
-                                                </div>
-                                                <div class="metadata     ">
-                                                    <div class="anchored-text"><h4
-                                                            class="category-info"><span
-                                                            class="content-icon databank-icon"></span>
-                                                        <span class="category-name">databank</span></h4>
-                                                    </div>
-                                                </div>
-                                                <div class="decal"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="building-block-config el4_4 video-content half image-left content-height-fixed ratio-16x9 mini  mob-width-full mob-image-left mob-fixed-height mob-height-medium         ">
-                            <div class="building-block  ">
-                                <div class="building-block-aspect">
-                                    <div class="building-block-padding">
-                                        <div class="building-block-wrapper">
-                                            <div class="image-wrapper">
-                                                <div class="aspect">
-                                                    <a href="">Image</a>
-                                                </div>
-                                            </div>
-                                            <div class="content-wrapper   ">
-                                                <div class="bedazzlement"></div>
-                                                <time>1:10</time>
-                                                <div class="content-bumper">
-                                                    <div class="content-info"><h3 class="title"><a
-                                                            href="">Title</a></h3>
+<div class="container" style="width: 800px; margin: 0 auto; margin-top: 100px;">
 
-                                                        <div class="desc-sizer"><p class="desc">Description</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="metadata">
-                                                    <div class="anchored-text">
-                                                        <h4 class="category-info">
-                                                            <span class="content-icon video-icon"></span>
-                                                            <span class="category-name">Category Name</span>
-                                                        </h4>
-                                                    </div>
-                                                </div>
-                                                <div class="decal"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="building-block-config el4_4 gamesapps-content half image-left content-height-fixed ratio-16x9 mini  mob-width-full mob-image-left mob-fixed-height mob-height-medium">
-                            <div class="building-block  ">
-                                <div class="building-block-aspect">
-                                    <div class="building-block-padding">
-                                        <div class="building-block-wrapper">
-                                            <div class="image-wrapper">
-                                                <div class="aspect">
-                                                    <a href="">Image</a>
-                                                </div>
-                                            </div>
-                                            <div class="content-wrapper">
-                                                <div class="bedazzlement"></div>
-                                                <div class="content-bumper">
-                                                    <div class="content-info"><h3 class="title"><a href="">Title Link</a></h3>
 
-                                                        <div class="desc-sizer">
-                                                            <p class="desc">Description</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="metadata">
-                                                    <div class="anchored-text">
-                                                        <h4 class="category-info">
-                                                            <span class="content-icon gamesapps-icon"></span>
-                                                            <span class="category-name">Category Name</span>
-                                                        </h4>
-                                                    </div>
-                                                </div>
-                                                <div class="decal"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="building-block-config el4_4 databank-content half image-left content-height-fixed
-                         ratio-16x9 mini  mob-width-full mob-image-left mob-fixed-height mob-height-medium ">
-                            <div class="building-block  ">
-                                <div class="building-block-aspect">
-                                    <div class="building-block-padding">
-                                        <div class="building-block-wrapper">
-                                            <div class="image-wrapper">
-                                                <div class="aspect">
-                                                    <a href="">Image</a>
-                                                </div>
-                                            </div>
-                                            <div class="content-wrapper   ">
-                                                <div class="bedazzlement"></div>
-                                                <div class="content-bumper">
-                                                    <div class="content-info">
-                                                        <h3 class="title"><a href="">Title</a></h3>
-                                                        <div class="desc-sizer"><p class="desc">Description</p></div>
-                                                    </div>
-                                                </div>
-                                                <div class="metadata">
-                                                    <div class="anchored-text">
-                                                        <h4 class="category-info">
-                                                            <span class="content-icon databank-icon"></span>
-                                                            <span class="category-name">Category Name</span>
-                                                        </h4>
-                                                    </div>
-                                                </div>
-                                                <div class="decal"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </ul>
-                </div>
-            </div>
+    <div class="row">
+        <div class="jumbotron">
+            <h1>{% block header %} {% endblock %}</h1>
         </div>
-        <div class="module-spinner" style="top: 262.4375px;"><span class="loader"></span></div>
-    </section>
-    <section class="module display-view display" data-module="display">
-        <div class="bound">
-            <div class="module_header">
-                <h2 class="module_title">Title</h2>
-            </div>
-            <div class="blocks-bound">
-                <div class="blocks-container">
-                    <ul class="blocks-list-view active el2_3A-el4_4-el3_4">
-                        <div class="building-block-config el2_3A video-content half image-top ratio-16x9 medium mob-width-full mob-image-top">
-                            <div class="building-block">
-                                <div class="building-block-aspect">
-                                    <div class="building-block-padding">
-                                        <div class="building-block-wrapper">
-                                            <div class="image-wrapper">
-                                                <div class="aspect">
-                                                    <a href="">Image</a>
-                                                </div>
-                                            </div>
-                                            <div class="content-wrapper">
-                                                <div class="bedazzlement"></div>
-                                                <time>0:59</time>
-                                                <div class="content-bumper">
-                                                    <div class="content-info">
-                                                        <h3 class="title"><a href="">Content</a></h3>
-                                                        <div class="desc-sizer"><p class="desc">Get your first extended look at the highly anticipated series.</p></div>
-                                                    </div>
-                                                </div>
-                                                <div class="metadata">
-                                                    <div class="anchored-text"><h4
-                                                            class="category-info"><span
-                                                            class="content-icon video-icon"></span>
-                                                        <span class="category-name">video</span></h4>
-                                                    </div>
-                                                </div>
-                                                <div class="decal"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="building-block-config el4_4 video-content half image-left content-height-fixed ratio-16x9 mini  mob-width-full mob-image-left mob-fixed-height mob-height-medium         ">
-                            <div class="building-block">
-                                <div class="building-block-aspect">
-                                    <div class="building-block-padding">
-                                        <div class="building-block-wrapper">
-                                            <div class="image-wrapper">
-                                                <div class="aspect">
-                                                    <a href="">Image</a>
-                                                </div>
-                                            </div>
-                                            <div class="content-wrapper">
-                                                <div class="bedazzlement"></div>
-                                                <time>0:45</time>
-                                                <div class="content-bumper">
-                                                    <div class="content-info">
-                                                        <h3 class="title"><a href="">Link Here</a></h3>
-                                                        <div class="desc-sizer"><p class="desc">Hera,
-                                                            captain of the Ghost, pilots her starship
-                                                            during a battle with two TIE fighters.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="metadata">
-                                                    <div class="anchored-text">
-                                                        <h4 class="category-info">
-                                                            <span class="content-icon video-icon"></span>
-                                                            <span class="category-name">video</span>
-                                                        </h4>
-                                                    </div>
-                                                </div>
-                                                <div class="decal"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="building-block-config el3_4 video-content   half image-left content-height-fixed ratio-4x3 short  mob-width-full mob-image-left mob-fixed-height mob-height-tall         ">
-                            <div class="building-block  ">
-                                <div class="building-block-aspect">
-                                    <div class="building-block-padding">
-                                        <div class="building-block-wrapper">
-                                            <div class="image-wrapper">
-                                                <div class="aspect">
-                                                    <a href="">Img Goes Here</a>
-                                                </div>
-                                            </div>
-                                            <div class="content-wrapper">
-                                                <div class="bedazzlement"></div>
-                                                <time>3:29</time>
-                                                <div class="content-bumper">
-                                                    <div class="content-info">
-                                                        <h3 class="title"><a href="">Star Wars Rebels: Meet Agent Kallus, Imperial Enforcer </a></h3>
+    </div>
 
-                                                        <div class="desc-sizer">
-                                                            <p class="desc">Agent Kallus, one of the Empire’s leading enforcers in the upcoming Star Wars Rebels animated series, is a major threat for the Ghost crew’s small band of heroes. In this special behind-the-scenes video, actor David Oyelowo discusses playing the new villain.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="metadata">
-                                                    <div class="anchored-text">
-                                                        <h4 class="category-info">
-                                                            <span class="content-icon video-icon"></span>
-                                                            <span class="category-name">video</span>
-                                                        </h4>
-                                                    </div>
-                                                </div>
-                                                <div class="decal"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </ul>
-                </div>
-            </div>
+    <div class="row">
+        <div class="well">
+            {% block content %} {% endblock %}
         </div>
-        <div class="module-spinner" style="top: 262.4375px;"><span class="loader"></span></div>
-    </section>
-    <section class="module display-view display" data-module="display">
-        <div class="bound ">
-            <div class="module_header"><h2 class="module_title">Events //</h2></div>
-            <div class="blocks-bound">
-                <div class="blocks-container">
-                    <ul class="blocks-list-view active el3_3-el3_5B">
-                        <div class="building-block-config el3_3 events-content two-thirds image-left content-height-fixed ratio-2x1 short  mob-width-full mob-image-top">
-                            <div class="building-block">
-                                <div class="building-block-aspect">
-                                    <div class="building-block-padding">
-                                        <div class="building-block-wrapper">
-                                            <div class="image-wrapper">
-                                                <div class="aspect">
-                                                    <a href="">Img Goes Here</a>
-                                                </div>
-                                            </div>
-                                            <div class="content-wrapper">
-                                                <div class="bedazzlement"></div>
-                                                <div class="content-bumper">
-                                                    <div class="content-info"><h3 class="title"><a
-                                                            href=""> Link Holder </a>
-                                                    </h3>
+    </div>
 
-                                                        <div class="desc-sizer"><p class="desc">Copy Holder</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="metadata">
-                                                    <div class="anchored-text">
-                                                        <h4 class="category-info">
-                                                            <span class="content-icon events-icon"></span>
-                                                            <span class="category-name">events</span>
-                                                        </h4>
-                                                    </div>
-                                                </div>
-                                                <div class="decal"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="building-block-config el3_5B events-content third image-top ratio-2x1 short mob-width-full mob-image-top">
-                            <div class="building-block">
-                                <div class="building-block-aspect">
-                                    <div class="building-block-padding">
-                                        <div class="building-block-wrapper">
-                                            <div class="image-wrapper">
-                                                <div class="aspect">
-                                                    <a href=""></a>
-                                                </div>
-                                            </div>
-                                            <div class="content-wrapper   ">
-                                                <div class="bedazzlement"></div>
-                                                <div class="content-bumper">
-                                                    <div class="content-info">
-                                                        <h3 class="title">
-                                                            <a href=""> Star Wars Reads Day </a>
-                                                        </h3>
 
-                                                        <div class="desc-sizer">
-                                                            <p class="desc">Star Wars Reads Day, the annual celebration of reading and Star Wars, returns to libraries and booksellers October 11, 2014.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="metadata">
-                                                    <div class="anchored-text">
-                                                        <h4 class="category-info">
-                                                            <span class="content-icon events-icon"></span>
-                                                            <span class="category-name">events</span>
-                                                        </h4>
-                                                    </div>
-                                                </div>
-                                                <div class="decal"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </ul>
-                </div>
-            </div>
+    <div class="row">
+        <div class="panel-primary">
+            {% block subnav %} {% endblock %}
         </div>
-        <div class="module-spinner" style="top: 192.9375px;"><span class="loader"></span></div>
-    </section>
-    <section class="module display-view lazy_display" data-module="lazy_display">
-        <div class="bound">
-            <div class="module_header"><h2 class="module_title">Around the Web //</h2></div>
-            <div class="blocks-bound">
-                <div class="blocks-container">
-                    <ul class="blocks-list-view active el3_5B-el3_5B-el3_5B">
-                        <div class="building-block-config el3_5B promo-content block-override-content  third image-top  ratio-2x1 short  mob-width-full mob-image-top          ">
-                            <div class="building-block  promo-override no-bg no-logo text ">
-                                <div class="building-block-aspect">
-                                    <div class="building-block-padding">
-                                        <div class="building-block-wrapper">
-                                            <div class="image-wrapper">
-                                                <div class="aspect"><a href="" target="_blank"><img src="" class="thumb"></a></div>
-                                            </div>
-                                            <div class="content-wrapper">
-                                                <div class="bedazzlement"></div>
-                                                <div class="content-bumper">
-                                                    <div class="content-info"><h3 class="title"><a href="" target="_blank"> Revisiting Star Wars: Shadows of the Empire </a></h3>
-                                                        <div class="desc-sizer">
-                                                            <p class="desc">"Star Wars: Shadows of the Empire" was the transmedia effort to fill the gap between "The Empire Strikes Back" &amp; "Return of the Jedi." </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="metadata">
-                                                    <div class="anchored-text">
-                                                        <h4 class="category-info">
-                                                            <span class="category-info"><span>
-                                                            <span class="content-icon promo-icon"></span>
-                                                            <span class="category-name">promo</span>
-                                                        </h4>
-                                                    </div>
-                                                </div>
-                                                <div class="decal"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="building-block-config el3_5B promo-content block-override-content third image-top ratio-2x1 short mob-width-full mob-image-top          ">
-                            <div class="building-block promo-override no-bg no-logo text">
-                                <div class="building-block-aspect">
-                                    <div class="building-block-padding">
-                                        <div class="building-block-wrapper">
-                                            <div class="image-wrapper">
-                                                <div class="aspect">
-                                                    <a href="" target="_blank">
-                                                        <img src="" class="thumb">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="content-wrapper">
-                                                <div class="bedazzlement"></div>
-                                                <div class="content-bumper">
-                                                    <div class="content-info">
-                                                        <h3 class="title">
-                                                            <a href="" target="_blank">Uniqlo Grand Prix 2015: Star Wars </a>
-                                                        </h3>
-
-                                                        <div class="desc-sizer">
-                                                            <p class="desc">The Japanese brand taps George Lucas's empire for the annual competition.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="metadata">
-                                                    <div class="anchored-text">
-                                                        <h4 class="category-info">
-                                                            <span class="content-icon promo-icon"></span>
-                                                            <span class="category-name">promo</span>
-                                                        </h4>
-                                                    </div>
-                                                </div>
-                                                <div class="decal"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="building-block-config el3_5B promo-content block-override-content  third image-top  ratio-2x1 short  mob-width-full mob-image-top">
-                            <div class="building-block promo-override no-bg no-logo text">
-                                <div class="building-block-aspect">
-                                    <div class="building-block-padding">
-                                        <div class="building-block-wrapper">
-                                            <div class="image-wrapper">
-                                                <div class="aspect">
-                                                    <a href="" target="_blank"> <img src="" class="thumb"> </a>
-                                                </div>
-                                            </div>
-                                            <div class="content-wrapper">
-                                                <div class="bedazzlement"></div>
-                                                <div class="content-bumper">
-                                                    <div class="content-info">
-                                                        <h3 class="title"><a href="" target="_blank"> May the Force be with you – all the way to the prom. </a></h3>
-                                                        <div class="desc-sizer"><p class="desc">Teenager Mollie Baker was given a special armed guard to get her to her prom at Chilworth Manor.</p></div>
-                                                    </div>
-                                                </div>
-                                                <div class="metadata">
-                                                    <div class="anchored-text">
-                                                        <h4 class="category-info">
-                                                            <span class="content-icon promo-icon"></span>
-                                                            <span class="category-name">promo</span>
-                                                        </h4>
-                                                    </div>
-                                                </div>
-                                                <div class="decal"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="module-spinner" style="top: 192.9375px;"><span class="loader"></span></div>
-    </section>
-</article>
+    </div>
 </div>
-</div>
-</div>
 
-<footer itemscope="" itemtype="">
-    <section id="utility">
-        <div class="social-links">
-            <p>Follow RocketLaunchIt:</p>
-            <ul id="social-links">
-                <li><a class="fb" href="" target="_blank" data-cto="social"></a></li>
-                <li><a class="tumblr" href=""" target="_blank" data-cto="social"></a></li>
-                <li><a class="twitter" href="" target="_blank" data-cto="social"></a></li>
-                <li><a class="instagram" href=""" target="_blank" data-cto="social"></a></li>
-                <li><a class="google_plus" href="" target="_blank" data-cto="social"></a></li>
-                <li><a class="youtube" href="" target="_blank" data-cto="social"></a></li>
-            </ul>
-        </div>
-    </section>
-    <section id="help">
-        <div>
-            <p id="copyright">TM &amp; © 2014 John Ryan. All Rights Reserved</p>
-            <ul id="legal">
-                <li><a target="_blank" href="">Companies</a></li>
-                <li><a target="_blank" href="">Developers</a></li>
-                <li><a target="_blank" href="">Find Project</a></li>
+{#<footer itemscope="" itemtype="">#}
+{#    <section id="utility">#}
+{#        <div class="social-links">#}
+{#            <p>Follow RocketLaunchIt:</p>#}
+{#            <ul id="social-links">#}
+{#                <li><a class="fb" href="" target="_blank" data-cto="social"></a></li>#}
+{#                <li><a class="tumblr" href=""" target="_blank" data-cto="social"></a></li>#}
+{#                <li><a class="twitter" href="" target="_blank" data-cto="social"></a></li>#}
+{#                <li><a class="instagram" href=""" target="_blank" data-cto="social"></a></li>#}
+{#                <li><a class="google_plus" href="" target="_blank" data-cto="social"></a></li>#}
+{#                <li><a class="youtube" href="" target="_blank" data-cto="social"></a></li>#}
+{#            </ul>#}
+{#        </div>#}
+{#    </section>#}
+{#    <section id="help">#}
+{#        <div>#}
+{#            <p id="copyright">TM &amp; © 2014 John Ryan. All Rights Reserved</p>#}
+{#            <ul id="legal">#}
+{#                <li><a target="_blank" href="">Companies</a></li>#}
+{#                <li><a target="_blank" href="">Developers</a></li>#}
+{#                <li><a target="_blank" href="">Find Project</a></li>#}
                 {#                <li><a target="_blank" href=""></a></li>#}
-                <li><a target="_blank" href="">About Us</a></li>
-                <li><a target="_blank" href="">Contact Us</a></li>
-            </ul>
-        </div>
-    </section>
-</footer>
-
-
-</div>
-<div style="position: absolute; top: 0px; bottom: 0px; width: 100%; z-index: 10000; visibility: hidden; min-height: 0px; left: -100%;">
-    <iframe allowtransparency="true" frameborder="0" width="100%" height="100%" scrolling="no" style="overflow:hidden;display:block;" src="https://a.dilcdn.com/_swdid/www.starwars.com"></iframe>
-</div>
-
-
-<noscript>
-    &lt;img src="http://ctologger01.analytics.go.com/cto?accnt=wdgdollucas%2Cwdgdolstarcom%2Cwdgdsec%2Cmatterhorn&amp;app=w88_dolwa_prod03&amp;brndSeg=luc&amp;categoryCd=luc&amp;jsv=0&amp;omniId=no_s_vi_cookie&amp;sessionData=no_dolWASessionData_cookie&amp;sessionId=no_dolWASessionData_cookie&amp;siteCd=starwars&amp;swid=no_SWID_cookie&amp;trckTp=trackpage&amp;visitorData=no_dolWAVisitorData_cookie&amp;visitorId=no_dolWAVisitorData_cookie&amp;xhr=get"
-    height="1" width="1"&gt;
-</noscript>
-
-
-<script type="text/javascript" async="" src="http://secure-us.imrworldwide.com/novms/js/2/ggcmb390.js"></script>
+{#                <li><a target="_blank" href="">About Us</a></li>#}
+{#                <li><a target="_blank" href="">Contact Us</a></li>#}
+{#            </ul>#}
+{#        </div>#}
+{#    </section>#}
+{#</footer>#}
+{##}
+{##}
+{#</div>#}
+{#<div style="position: absolute; top: 0px; bottom: 0px; width: 100%; z-index: 10000; visibility: hidden; min-height: 0px; left: -100%;">#}
+{#    <iframe allowtransparency="true" frameborder="0" width="100%" height="100%" scrolling="no" style="overflow:hidden;display:block;" src="https://a.dilcdn.com/_swdid/www.starwars.com"></iframe>#}
+{#</div>#}
+{##}
+{##}
+{#<noscript>#}
+{#    &lt;img src="http://ctologger01.analytics.go.com/cto?accnt=wdgdollucas%2Cwdgdolstarcom%2Cwdgdsec%2Cmatterhorn&amp;app=w88_dolwa_prod03&amp;brndSeg=luc&amp;categoryCd=luc&amp;jsv=0&amp;omniId=no_s_vi_cookie&amp;sessionData=no_dolWASessionData_cookie&amp;sessionId=no_dolWASessionData_cookie&amp;siteCd=starwars&amp;swid=no_SWID_cookie&amp;trckTp=trackpage&amp;visitorData=no_dolWAVisitorData_cookie&amp;visitorId=no_dolWAVisitorData_cookie&amp;xhr=get"#}
+{#    height="1" width="1"&gt;#}
+{#</noscript>#}
+{##}
+{##}
+{#<script type="text/javascript" async="" src="http://secure-us.imrworldwide.com/novms/js/2/ggcmb390.js"></script>#}
 
 
 </body>

@@ -112,6 +112,8 @@ MEDIA_ROOT = os.path.join(PROJECT_ROOT, "static", *MEDIA_URL.strip("/").split("/
 # EMAIL_PORT = 587
 # DEFAULT_FROM_EMAIL = 'northdacoder@gmail.com'
 
+DJANGO_TOOLBAR_PATCH_SETTINGS = False
+
 
 try:
     from local_settings import *

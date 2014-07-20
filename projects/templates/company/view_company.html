@@ -41,7 +41,7 @@
     <hr>
     <h2>Developers in {{ company.name }}:</h2>
         <ul>
-            {% for developer in company.developer_company.all|dictsort:'name' %}
+            {% for developer in company.developer_company.all %}
                 <li><a href="{% url "view_developer" developer.id %}" >{{ developer.name }}</a></li>
             {% endfor %}
         </ul>

@@ -2,7 +2,11 @@
 
 {% block title %} Companies {% endblock %}
 
+{% block header %} Companies {% endblock %}
+
+
 {%  block content %}
+<div class="col-sm-6 col-sm-offset-3">
 <h1>Companies</h1>
 
 <ul>
@@ -10,18 +14,20 @@
         <li><a href="{% url "view_company" company.id %}" >{{ company.name }}</a></li>
     {% endfor %}
 </ul>
-
+</div>
 {% endblock %}
 
 {% block subnav %}
+<div class="col-sm-6 col-sm-offset-3">
 <nav>
    {% if user.is_staff %}
     <nav class="navbar navbar-default">
         <ul class="nav navbar-nav">
-        <li><a href="{% url 'new_company' %}">Add a new company</a></li>
-       </ul>
+            <li><a href="{% url 'new_company' %}" class="btn btn-lg btn-success" role="button">Add a new
+                company</a></li>
+        </ul>
     </nav>
     {% endif %}
     </nav>
-
+</div>
 {% endblock %}

@@ -4,7 +4,7 @@ from datetime import datetime, timedelta, date
 import time
 
 class BaseModel(models.Model):
-    name = models.CharField(max_length=120)
+    name = models.CharField(max_length=120, blank=True, null=True)
 
     def __unicode__(self):
         return self.name
@@ -14,7 +14,7 @@ class Company(BaseModel):
     city = models.CharField(max_length=120, blank=True, null=True)
     state = models.CharField(max_length=120, blank=True, null=True)
     zip = models.IntegerField(max_length=5, blank=True, null=True)
-    phone = models.IntegerField(max_length=12, blank=True, null=True)
+    phone = models.IntegerField(blank=True, null=True)
     description = models.CharField(max_length=6000, blank=True, null=True)
     created = models.DateTimeField(auto_now=True)
     website = models.URLField(max_length=120, null=True, blank=True)
@@ -64,7 +64,7 @@ class Project(BaseModel):
     description = models.TextField(max_length=10000)
     contact_name = models.CharField(max_length=120)
     contact_email = models.EmailField(null=True, blank=True)
-    contact_phone = models.CharField(max_length=120, blank=True)
+    contact_phone = models.CharField(max_length=120, null=True, blank=True)
     sample_screenshot = models.FileField(upload_to='uploads/', null=True, blank=True)
     finished_screenshot = models.FileField(upload_to='uploads/', null=True, blank=True)
     website = models.URLField(max_length=120, null=True, blank=True)
@@ -78,7 +78,7 @@ class Developer(BaseModel):
     city = models.CharField(max_length=120, blank=True)
     state = models.CharField(max_length=100, blank=True, null=True)
     email = models.EmailField(blank=True, null=True)
-    phone = models.IntegerField(blank=True, null=True)
+    phone = models.CharField(max_length=120, null=True, blank=True)
     description = models.TextField(max_length=6000, blank=True, null=True)
     profile_pic = models.ImageField(upload_to='uploads', null=True, blank=True)
     profile_background = models.ImageField(upload_to='uploads', null=True, blank=True)

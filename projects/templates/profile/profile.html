@@ -1,46 +1,23 @@
 {% extends 'base.html' %}
-{% load bootstrap3 %}
 {% load humanize %}
 
 
-{% block title %} Profile - {{ user.first_name|title }} {% endblock %}
+{% block title %} Profile - {{ user.first_name }} {% endblock %}
+
+{% block header %} {{ user.first_name }} {{ user.last_name }}'s Profile {% endblock %}
+
 {% block content %}
     <div class="col-md-6">
-    <h1>{{ user.first_name|title }} {{ user.last_name|title }}</h1>
- <!--<p>Hi {{ user.first_name|title }} {{ user.last_name|title }}, you were last here {{ user.last_login|naturalday }}, {{ user.last_login|naturaltime }}</p>-->
-    <p><a href="mailto:{{ user.email }}">{{ user.email }}</a></p>
-    <p>Joined: {{ user.date_joined|timesince }} ago</p>
-    <p>{{ user.address1 }}</p>
-    {% if user.address2 %}
-        <p>{{ user.address2 }}</p>
-    {% endif %}
-        {% if user.city %}
-
-    <p>{{ user.city }}, {{ user.state }} {{ user.zip }}</p>
-    <p>{{ user.country }}</p>
-{% endif %}
-    <hr>
-        {% if user.bio %}
+        <p><a href="mailto:{{ user.email }}">{{ user.email }}</a></p>
+        <p>Address: {{ user.address }}</p>
+        <p>Location: {{ user.city }}, {{ user.state }} {{ user.zip }}</p>
+        <p>Country: {{ user.country }}</p>
+        <p>Company: {{ user.company }}</p>
+        <img src="{{ user.image }}" class="img-thumbnail" />
+        <h1>About me</h1><br>
         <p>{{ user.bio }}</p>
-    {% endif %}
-
-
-
-
-
     </div>
-{% if user.image %}
-<div class="club_map">
-    <img src="/static/{{ user.image.url }}">
-<div style="clear: both"> </div>
-</div>
-{% endif %}
-<div class="clearfix"></div>
 
-
-
-    <p>        <a href="{% url 'profile_update' user.id %}">update profile</a>
-</p>
-
+    <a href="{% url 'profile_update' user.id %}" class="btn btn-lg btn-primary">Save profile</a>
 
 {% endblock content %}

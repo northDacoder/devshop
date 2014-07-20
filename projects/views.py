@@ -10,7 +10,11 @@ from projects.models import Project, Company, Developer
 def home(request):
     open_projects = Project.objects.filter(date__gt=datetime.today())
     completed_projects = Project.objects.filter(date__lt=datetime.today())
-    data = {'open_projects': open_projects, 'completed_projects': completed_projects}
+    companies = Company.objects.all()
+    developers = Developer.objects.all()
+    profiles = {'user': request.user}
+    data = {'open_projects': open_projects, 'completed_projects': completed_projects, 'companies': companies,
+            'developers': developers, 'profiles': profiles}
     return render(request, "home.html", data)
 
 """
@@ -56,7 +60,8 @@ COMPANIES
 
 def companies(request):
     companies = Company.objects.all()
-    return render(request, "company/companies.html", {'companies': companies})
+    data = {"companies": companies}
+    return render(request, "company/companies.html", data)
 
 
 
@@ -70,7 +75,7 @@ def view_company(request, company_id):
 
 def new_company(request):
     if request.method == "POST":
-        form = CompanyForm(request.POST)
+        form = CompanyForm(request.POST or None)
         if form.is_valid():
             if form.save():
                 return redirect("/companies")
@@ -124,7 +129,7 @@ def view_project(request, project_id):
 
 def new_project(request):
     if request.method == "POST":
-        form = ProjectForm(request.POST)
+        form = ProjectForm(request.POST or None)
         if form.is_valid():
             if form.save():
                 return redirect("/projects")
@@ -178,7 +183,7 @@ def view_developer(request, developer_id):
 
 def new_developer(request):
     if request.method == "POST":
-        form = DeveloperForm(request.POST)
+        form = DeveloperForm(request.POST or None)
         if form.is_valid():
             if form.save():
                 return redirect("/developers")
